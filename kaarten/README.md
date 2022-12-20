@@ -1,31 +1,15 @@
 # Kaarten
 
-## Specht (1695)
-* [Specht (1695) Georeferencer](http://uu.georeferencer.com/maps/331aaaf3-72d2-52ab-8cc3-fe44fc7abcf6/) (Als je op deze pagina (gratis) inlogt, krijg je toegang tot de GIS-links en de GEO-Tiff.)
-* [Specht (1695) Weblink UU](http://objects.library.uu.nl/reader/index.php?obj=1874-348748&lan=en#page//11/87/40/118740207246035919625727383986846718971.jpg/mode/1up)
-* [Specht (1695) ImageProperties.xml](http://objects.library.uu.nl/fcgi-bin/iipsrv.fcgi?zoomify=/manifestation/viewer/11/87/40/118740207246035919625727383986846718971.jp2/ImageProperties.xml)
-* De TIFF is evt ook beschikbaar via Marco.
-* [Zoombare view met IIPMooView](http://objects.library.uu.nl/reader/viewer.php?obj=1874-348748&pagenum=1&lan=en)
+## Plattegrond van Gouda door Joan Blaeu (1649)
+* https://n2t.net/ark:/60537/bumH54  (of toch de 'monochrome' versie https://n2t.net/ark:/60537/bsunUJ ?)
+* https://www.goudatijdmachine.nl/data/iiif/2/17782/manifest
+* https://mapwarper.net/maps/68249 (https://mapwarper.net/maps/tile/68249/{z}/{x}/{y}.png)
 
-<img src="thumbs/Specht (1695).jpg" width="300"/>
+<img src=̈"60537.jpg">
 
-## Blaeu (1649)
-* [Blaeu (1649) Georeferencer](http://uu.georeferencer.com/maps/7dd2ec0b-2897-55a5-a385-b19cfe268257/)
-* [Blaeu (1649) Weblink UU](http://objects.library.uu.nl/reader/index.php?obj=1874-351073&lan=en#page//72/46/38/72463859667832144848804572952047205750.jpg/mode/1up)
-* [Blaeu (1649) ImageProperties.xml](http://objects.library.uu.nl/fcgi-bin/iipsrv.fcgi?zoomify=/manifestation/viewer/72/46/38/72463859667832144848804572952047205750.jp2/ImageProperties.xml)
-* [Zoombare view met IIPMooView](http://objects.library.uu.nl/reader/viewer.php?obj=1874-351073&pagenum=1&lan=en)
+## Hollandiae oppidum Gouda, accuratissimé ad vivum delineatum, et aeri incisum (1612 - 1648)
+* https://n2t.net/ark:/60537/bIizeM
+* https://www.goudatijdmachine.nl/data/iiif/2/151/manifest
+* https://mapwarper.net/maps/68259 (https://mapwarper.net/maps/tile/68259/{z}/{x}/{y}.png)
 
-<img src="thumbs/Blaeu (1649).jpg" width="300"/>
-
-## Raven (1778)
-* [Raven (1778) Georeferencer](http://uu.georeferencer.com/maps/fb84bfc9-0956-5d2c-8c70-9da257a62589/)
-* [Raven (1778) Weblink UU](http://objects.library.uu.nl/reader/index.php?obj=1874-348831&lan=en#page//15/12/51/151251960807504984483818404817156250719.jpg/mode/1up)
-* [Raven (1778) ImageProperties.xml](http://objects.library.uu.nl/fcgi-bin/iipsrv.fcgi?zoomify=/manifestation/viewer/15/12/51/151251960807504984483818404817156250719.jp2/ImageProperties.xml)
-* [Zoombare view met IIPMooView](http://objects.library.uu.nl/reader/viewer.php?obj=1874-348831&pagenum=1&lan=en)
-
-<img src="thumbs/Raven (1778).jpg" width="300"/>
-
-## Van der Monde (1838)
-* [Zoombare kaart met Zoomify](https://hualab.nl/skyline/kaarten/Zoomify-vanderMonde-1838/)
-* [Plattegrond_stad_Utrecht_door_Van_der_Monde_in_1838.jpg](large/Plattegrond_stad_Utrecht_door_Van_der_Monde_in_1838.jpg) (2933 × 2232, 790KB)
-<img src="thumbs/vanderMonde (1838).jpg" width="300"/>
+<img src=̈"152.jpg">
