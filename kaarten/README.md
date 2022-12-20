@@ -1,7 +1,7 @@
 # Kaarten
 
 ## Plattegrond van Gouda door Joan Blaeu (1649)
-* https://n2t.net/ark:/60537/bumH54  (of toch de 'monochrome' versie https://n2t.net/ark:/60537/bsunUJ ?)
+* https://n2t.net/ark:/60537/bumH54  (of toch de 'monochrome' versie https://n2t.net/ark:/60537/bsunUJ ??)
 * https://www.goudatijdmachine.nl/data/iiif/2/17782/manifest
 * https://mapwarper.net/maps/68249 (https://mapwarper.net/maps/tile/68249/{z}/{x}/{y}.png)
 
