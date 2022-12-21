@@ -67,7 +67,7 @@ export default {
 .Afb {
   grid-row: 2 / 2;
   grid-column: 1 / span 1;
-  background-color: var(--offwhite);
+  background-color: var(--lichtgijs);
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;

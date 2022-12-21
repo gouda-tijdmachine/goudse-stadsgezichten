@@ -221,7 +221,7 @@ export default {
 
 <style>
 .Map {
-  background-color: var(--offwhite);
+  background-color: var(--lichtgijs);
 }
 
 .mapboxgl-ctrl-group {
@@ -278,25 +278,25 @@ export default {
 
 .mapboxgl-popup-content {
 /*  font-family: "Ropa Sans", "Lato", Helvetica, Arial, sans-serif;*/
-  background: var(--offwhite);
+  background: var(--lichtgijs);
   padding:0 5px
 }
 
 .mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip {
-  border-bottom-color:  var(--offwhite);
+  border-bottom-color:  var(--lichtgijs);
 }
 .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip {
-  border-top-color: var(--offwhite);
+  border-top-color: var(--lichtgijs);
 }
 .mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
-  border-right-color: var(--offwhite);
+  border-right-color: var(--lichtgijs);
 }
 .mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
-  border-left-color: var(--offwhite);
+  border-left-color: var(--lichtgijs);
 }
 
 /* RESPONSIVENESS */

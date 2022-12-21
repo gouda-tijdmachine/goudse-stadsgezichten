@@ -17,12 +17,16 @@
 }
 
 :root {
-    --rood:#d12929;
-    --blauw:#3991b1;
-    --wit:#ffffff;
-    --offwhite:#efebe0;
-    --donkergrijs:#3b3f54;
-    --bijnazwart:#111111;
+  --rood: #d12929;
+  --blauw: #3991b1;
+  --wit: #ffffff;
+  --lichtgrijs: #ebebeb;
+  --bruin: #543b3b;
+  --bijnazwart: #111111;
+  --grijs: #666666;
+  --lichtgroen: #dff0d8;
+  --lichtrood: #f2dede;
+	--lichtblauw: #3991b133;
 }
 
 * {
@@ -34,7 +38,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-color:var(--offwhite);
+  background-color:var(--lichtgrijs);
   color:var(--bijnazwart);
 }
 
@@ -45,7 +49,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background-color: var(--offwhite);
+  background-color: var(--lichtgrijs);
   margin: 0;
   padding: 0;
 }
@@ -58,11 +62,11 @@ button {
   cursor: pointer;
   padding: 15px;
   margin: 5px 5px 5px 0px;
-  color: var(--offwhite);
+  color: var(--lichtgrijs);
 }
 
 a {
-  color: var(--offwhite);
+  color: var(--lichtgrijs);
   text-decoration: none;
 }
 
@@ -92,7 +96,7 @@ a {
 }
 
 .tooltip .tooltip-inner {
-  background: var(--offwhite);
+  background: var(--lichtgrijs);
   color: #4B4B4B;
   border-radius: 5px;
   padding: 10px;
@@ -104,7 +108,7 @@ a {
   border-style: solid;
   position: absolute;
   margin: 5px;
-  border-color: var(--offwhite);
+  border-color: var(--lichtgrijs);
   z-index: 1;
 }
 tooltip[x-placement^="top"] {
@@ -168,7 +172,7 @@ tooltip[x-placement^="top"] {
 }
 
 .tooltip.popover .popover-inner {
-  background: var(--offwhite);
+  background: var(--lichtgrijs);
   color: var(--rood);
   padding: 24px;
   border-radius: 5px;
@@ -176,7 +180,7 @@ tooltip[x-placement^="top"] {
 }
 
 .tooltip.popover .popover-arrow {
-  border-color: var(--offwhite);
+  border-color: var(--lichtgrijs);
 }
 
 .tooltip[aria-hidden="true"] {
