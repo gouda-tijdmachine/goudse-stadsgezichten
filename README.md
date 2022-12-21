@@ -1,3 +1,3 @@
-# Goudse stadsgezichten
+# 17de eeuwse stadsgezichten van Gouda
 
-Deze app is fork van Utrecht in Perspectief.
+![Social](app/public/social.png)
