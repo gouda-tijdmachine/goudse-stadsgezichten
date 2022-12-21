@@ -68,10 +68,9 @@ export default {
         showed: false,
         content: "Title will go here.",
       },
-      center: [5.121044, 52.09031],
+      center: [4.7, 52.0008],
       maxBounds: [ 
-        [5.073492, 52.050002], 
-        [5.166531, 52.125824] 
+        [4.695575,52.003876],[4.721942,52.018380]
       ],
     };
   },
@@ -197,8 +196,8 @@ export default {
           "circle-color": [
             "case",
             ["==", ["get", "label"], this.gekozenGebouwId],
-            "rgba(48,152,138,0.6)",
-            "rgba(69,93,199,0.4)",
+            "rgba(255,0,0,0.4)",
+            "rgba(0,176,240,0.6)", 
           ],
           "circle-opacity": 1,
           "circle-stroke-color": "rgb(218, 203, 178)",
@@ -222,8 +221,7 @@ export default {
 
 <style>
 .Map {
-  color: #3b3f54;
-  background-color: #dacbb2;
+  background-color: var(--offwhite);
 }
 
 .mapboxgl-ctrl-group {
@@ -238,7 +236,7 @@ export default {
 }
 
 .mapboxgl-ctrl > button:not(:disabled):hover {
-  background-color: #30988a;
+  background-color: var(--blauw);
 }
 
 .mapboxgl-ctrl > button:disabled {
@@ -279,25 +277,26 @@ export default {
 }
 
 .mapboxgl-popup-content {
-  font-family: "Ropa Sans", "Lato", Helvetica, Arial, sans-serif;
-  background: rgba(255, 255, 255, 0.9);
+/*  font-family: "Ropa Sans", "Lato", Helvetica, Arial, sans-serif;*/
+  background: var(--offwhite);
+  padding:0 5px
 }
 
 .mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip {
-  border-bottom-color:  rgba(255, 255, 255, 0.9);
+  border-bottom-color:  var(--offwhite);
 }
 .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip {
-  border-top-color: rgba(255, 255, 255, 0.9);
+  border-top-color: var(--offwhite);
 }
 .mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
-  border-right-color: rgba(255, 255, 255, 0.9);
+  border-right-color: var(--offwhite);
 }
 .mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
-  border-left-color: rgba(255, 255, 255, 0.9);
+  border-left-color: var(--offwhite);
 }
 
 /* RESPONSIVENESS */

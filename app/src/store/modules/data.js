@@ -1,27 +1,27 @@
-import lijst69 from '../../assets/data/gebouwen_1669.json';
-import lijst84 from '../../assets/data/gebouwen_1684.json';
+import lijst41 from '../../assets/data/gebouwen_1641.json';
+import lijst44 from '../../assets/data/gebouwen_1644.json';
 
-import Blaeu from "../../assets/data/mapStyleBlaeu_1669.json";
-import Specht from "../../assets/data/mapStyleSpecht_1684.json";
+import Wais1641 from "../../assets/data/kaart_blaeu_1649.json";
+import Wais1644 from "../../assets/data/kaart_hollandiae_oppidum_gouda_1612_1648.json";
 
 let datas = {
-  "Blaeu": lijst69,
-  "Specht": lijst84
+  "Wais1641": lijst41,
+  "Wais1644": lijst44
 }
 let styles = {
-  "Blaeu": Blaeu,
-  "Specht": Specht
+  "Wais1641": Wais1641,
+  "Wais1644": Wais1644
 }
 let panoramas = {
-  "Blaeu": "https://iiif2.hualab.nl/iiif/2/saftleven-panorama-1669.jpg/info.json",
-  "Specht": "https://iiif2.hualab.nl/iiif/2/saftleven-panorama-1684.jpg/info.json"
+  "Wais1641": "https://www.goudatijdmachine.nl/data/iiif/2/93730/info.json",
+  "Wais1644": "https://www.goudatijdmachine.nl/data/iiif/2/93732/info.json"
 }
 export default {
   namespaced: true,
   state: {
-    data: datas["Specht"],
-    panorama:  panoramas["Specht"],
-    mapStyle: styles["Specht"],
+    data: datas["Wais1641"],
+    panorama:  panoramas["Wais1641"],
+    mapStyle: styles["Wais1641"],
     gekozenGebouwId: "",
     gekozenGebouw: {
       properties: ""
@@ -82,15 +82,15 @@ export default {
   },
   actions: {
     toggleMapStyle({ state, commit }) {
-      if (state.mapStyle === styles["Blaeu"]) {
-        commit("setMapStyle", styles["Specht"])
-        commit("setPanorama", panoramas["Specht"])
-        commit("setDataset", datas["Specht"])
+      if (state.mapStyle === styles["Wais1644"]) {
+        commit("setMapStyle", styles["Wais1641"])
+        commit("setPanorama", panoramas["Wais1641"])
+        commit("setDataset", datas["Wais1641"])
 
-      } else if (state.mapStyle === styles["Specht"]) {
-        commit("setMapStyle", styles["Blaeu"])
-        commit("setPanorama", panoramas["Blaeu"])
-        commit("setDataset", datas["Blaeu"])
+      } else if (state.mapStyle === styles["Wais1641"]) {
+        commit("setMapStyle", styles["Wais1644"])
+        commit("setPanorama", panoramas["Wais1644"])
+        commit("setDataset", datas["Wais1644"])
 
       }
     },

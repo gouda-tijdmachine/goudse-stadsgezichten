@@ -1,11 +1,11 @@
 <template>
   <div class="DrieLuik">
     <Header></Header>
-    <div class="paarseBalk" id="paarseBalk1"></div>
+    <div class="gekleurdeBalk" id="gekleurdeBalk1"></div>
     <Panorama></Panorama>
-    <div class="paarseBalk" id="paarseBalk2"></div>
+    <div class="gekleurdeBalk" id="gekleurdeBalk2"></div>
     <Map></Map>
-    <div class="paarseBalk" id="paarseBalk3"></div>
+    <div class="gekleurdeBalk" id="gekleurdeBalk3"></div>
     <Carrousel></Carrousel>
   </div>
 </template>
@@ -72,26 +72,26 @@ export default {
   grid-template-columns: 320px repeat(2, 1fr);
   grid-template-rows: 56px repeat(2, 8px) 1fr repeat(2, 8px) 1fr repeat(2, 8px) 1fr;
 }
-.paarseBalk {
-  background: #455dc7;
+.gekleurdeBalk {
+  background: var(--rood);
   position: relative;
   z-index: 500;
   justify-self: stretch;
   align-self: stretch;
 }
-#paarseBalk1 {
+#gekleurdeBalk1 {
   grid-row: 2 / span 2;
   grid-column: 2 / span 2;
   justify-self: stretch;
   align-self: stretch;
 }
-#paarseBalk2 {
+#gekleurdeBalk2 {
   grid-row: 5 / span 2;
   grid-column: 2 / span 2;
   justify-self: stretch;
   align-self: stretch;
 }
-#paarseBalk3 {
+#gekleurdeBalk3 {
   grid-row: 8 / span 2;
   grid-column: 2 / span 2;
   justify-self: stretch;

@@ -31,8 +31,8 @@
         v-if="images.length >=1"
         :scrollPerPage="true"
         :perPageCustom="[[480, 3], [768, 4], [1000,6]]"
-        paginationActiveColor="#30988A"
-        paginationColor="#dacbb2"
+        paginationActiveColor="#00b0f0"
+        paginationColor="#ffffff"
         :centerMode="true"
         :paginationPadding="2"
       >
@@ -124,7 +124,7 @@ export default {
 .wikilink a:active  {
   color: #fff;
   font-weight: bold;
-  background-color: #30988a;
+  background-color: var(--blauw);
   padding: 10px;
 }
 
@@ -134,8 +134,8 @@ export default {
   grid-template-rows: 1fr;
   /*color: #3b3f54;
   background-color: #dacbb2;*/
-  color: #ffffff;
-  background-color: #3b3f54;
+  color: var(--wit);
+  background-color: var(--donkergrijs);
   overflow-y: hidden;
   overflow-x: hidden;
 }
@@ -148,8 +148,8 @@ export default {
 }
 
 #right {
-  background-color: #3b3f54;
-  color: #30988a;
+  background-color: var(--donkergrijs);
+  color: #var(--blauw);
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
   justify-self: stretch;
@@ -157,33 +157,13 @@ export default {
 }
 
 h1 {
-  color: #30988a;
+  color: var(--blauw);
 }
 
 p {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-
-/*ul#gebouwfuncties {
-  display: inline-block;
-  margin: 10px 0;
-  list-style: none;
-}
-
- ul#gebouwfuncties li {
-  display: inline-block;
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDE0IDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTQgNEw3LjM3OTUxIDBMNi42MDg0IDEuNDI2NzlMOS41MDc0NSAzLjE3ODM0SDBWNC44MjE2NUg5LjUwNzQ2TDYuNjA4NCA2LjU3MzIxTDcuMzc5NTEgOEwxNCA0WiIgZmlsbD0iIzNCM0Y1NCIvPgo8L3N2Zz4K");
-  background-repeat: no-repeat;
-  background-position: 0 0.4em;
-  padding-left: 20px;
-  margin-left: 10px; 
-}
-ul#gebouwfuncties li:first-child {
-  background-image: none;
-  margin-left: 0;
-  padding-left: 0px;
-} */
 
 .images-wrapper {
   margin-top: 8px !important;
@@ -210,10 +190,8 @@ ul#gebouwfuncties li:first-child {
 
 img {
   margin: 8px 8px 0px 0px;
-  /* min-height: 10vh; */
   height: 25vh;
   width: auto;
-  /* max-width: 10vw; */
 }
 
 /* RESPONSIVENESS */

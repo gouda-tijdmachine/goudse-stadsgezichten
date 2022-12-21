@@ -1,7 +1,8 @@
 <template>
   <div class="Header">
     <router-link to="/">
-      <h1>Utrecht in Perspectief</h1>
+      <h1><img src="../assets/images/wapengouda.png" 
+        alt="Gouda Tijdmachine">Goudse stadsgezichten</h1>
     </router-link>
     <button
       v-if="this.$route.name === 'Detail' ||this.$route.name === 'Colofon' "
@@ -12,12 +13,12 @@
     <div class="role-selector">
       <!-- Move input outside of .switch label -->
       <input v-on:change="toggle()" type="checkbox" checked id="role-checkbox" />
-      <span class="toggle-text">1669</span>
+      <span class="toggle-text">1641</span>
       <!-- Add for attribute that matches id of check input -->
       <label class="switch" for="role-checkbox">
         <span class="slider round"></span>
       </label>
-      <span class="toggle-text">1684</span>
+      <span class="toggle-text">1644</span>
     </div>
 
     <router-link :to="{name: 'Colofon', params:{ id: this.$route.params.id}}">
@@ -45,12 +46,26 @@ export default {
 <style scoped>
 .Header {
   display: inline-flex;
-  color: #fff;
-  background-color: #3b3f54;
+  color: var(--wit);
+  background-color: var(--blauw);
   justify-content: space-between;
   align-items: center;
   padding-left: 50px;
   padding-right: 5px;
+}
+
+h1 {
+  margin-left:43px;
+  font-size:2.5em;
+}
+
+h1 img {
+  float:left;
+  z-index:10;
+  position:absolute;
+  left:4px;
+  width:80px;
+  height:80px;
 }
 
 .button {
@@ -58,7 +73,7 @@ export default {
   height: 50px;
 }
 .button:hover {
-  background-color: #30988a;
+  background-color: var(--blauw);
 }
 
 /* TOGGLE */
@@ -68,7 +83,7 @@ input {
 
 /* Color labels green by default */
 .role-selector input + span {
-  color: #30988A;
+  color: #00b0f0;
   font-weight: bold;
 }
 .role-selector input + * + * + span {
@@ -82,7 +97,7 @@ input {
   font-weight: normal;
 }
 .role-selector input:checked + * + * + span {
-  color: #30988A;
+  color: #00b0f0;
   font-weight: bold;
 }
 
@@ -111,7 +126,7 @@ input {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #DACBB2;
+  background-color: #ffffff;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -123,13 +138,13 @@ input {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: #30988a;
+  background-color: #00b0f0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 input:checked + span + .switch .slider {
-  background-color: #DACBB2;
+  background-color: #fefefe;
 }
 
 input:focus + span + .switch .slider {

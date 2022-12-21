@@ -2,9 +2,9 @@
   <div class="Panorama">
     <LMap
       ref="map"
-      :minZoom="this.$route.name === 'DrieLuik' ? 2: 4"
+      :minZoom="this.$route.name === 'DrieLuik' ? 2: 3"
       :maxZoom="6"
-      :zoom="this.$route.name === 'DrieLuik' ? null : 4"
+      :zoom="this.$route.name === 'DrieLuik' ? null : 0"
       :crs="crs"
       :center="center"
       :options="{
@@ -19,8 +19,8 @@
         v-for="(gebouw, name) in this.gebouwen"
         :interactive="true"
         :bounds="gebouw.bounds"
-        v-bind:fillColor=" name === gekozenGebouwId ?  'rgb(48, 152, 138)'  : gebouw.style.fillColor "
-        v-bind:fillOpacity=" name === gekozenGebouwId ?  0.6  : gebouw.style.fillOpacity "
+        v-bind:fillColor=" name === gekozenGebouwId ?  'rgb(255,0,0)'  : gebouw.style.fillColor "
+        v-bind:fillOpacity=" name === gekozenGebouwId ?  0.4  : gebouw.style.fillOpacity "
         :stroke="gebouw.style.stroke"
         :key="name"
         @click="handleClick(name)"
@@ -53,9 +53,9 @@ export default {
   },
   data() {
     return {
-      center: [-30, 156.3],
+      center: [-70,210],
       crs: CRS.Simple,
-      opacity: 0.8,
+      opacity: 1,
       touchZoom: true,
       inertia: true,
       fadeAnimation: true,
@@ -130,15 +130,15 @@ export default {
     doHighlight(layer) {
       if (layer.options.className !== this.gekozenGebouwId) {
         layer.setStyle({
-          fillColor: "rgb(48, 152, 138)",
-          fillOpacity: 0.6,
+          fillColor: "rgb(255,0,0)",
+          fillOpacity: 0.4,
         });
       }
     },
     doReset(layer) {
       if (layer.options.className !== this.gekozenGebouwId) {
         layer.setStyle({
-          fillColor: "#455DC7",
+          fillColor: "rgb(0,176,240)",
           fillOpacity: 0.4,
         });
       }
@@ -150,11 +150,11 @@ export default {
 <style>
 .Panorama {
   color: #fff;
-  background-color: #ddcab1;
+  background-color: var(--wit);
 }
 
 .leaflet-container {
-  background: #ddcab1;
+  background: var(--wit);
 }
 
 .leaflet-bar {
@@ -164,7 +164,7 @@ export default {
 .leaflet-bar a,
 .leaflet-bar a:hover {
   background: none repeat scroll 0 0 #3b3f54;
-  color: #fff;
+  color: var(--wit);
   border-radius: 0px;
   box-shadow: none;
   width: 39px !important;
@@ -172,7 +172,7 @@ export default {
   line-height: 35px !important;
 }
 .leaflet-bar a:hover {
-  background: #30988a;
+  background: var(--blauw);
 }
 
 .leaflet-control-fullscreen a {
@@ -186,7 +186,7 @@ export default {
 }
 
 .leaflet-control-fullscreen a:hover {
-  background: #30988a
+  background: var(--blauw)
     url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzkiIGhlaWdodD0iNzgiIHZpZXdCb3g9IjAgMCAzOSA3OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy41IDUwLjVIMTEuNVY1Mi41VjU2LjVIMTMuNVY1Mi41SDE3LjVWNTAuNUgxMy41WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy41IDYwLjVIMTEuNVY2NC41VjY2LjVIMTMuNUgxNy41VjY0LjVIMTMuNVY2MC41WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yNy41IDYwLjVIMjUuNVY2NC41SDIxLjVWNjYuNUgyNS41SDI3LjVWNjQuNVY2MC41WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yMS41IDUwLjVWNTIuNUgyNS41VjU2LjVIMjcuNVY1Mi41VjUwLjVIMjUuNUgyMS41WiIgZmlsbD0id2hpdGUiLz4KPHJlY3QgeD0iMTYuNSIgeT0iNTUuNSIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjIiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTMuNSAxMS41SDExLjVWMTMuNVYxNy41SDEzLjVWMTMuNUgxNy41VjExLjVIMTMuNVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTMuNSAyMS41SDExLjVWMjUuNVYyNy41SDEzLjVIMTcuNVYyNS41SDEzLjVWMjEuNVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjcuNSAyMS41SDI1LjVWMjUuNUgyMS41VjI3LjVIMjUuNUgyNy41VjI1LjVWMjEuNVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjEuNSAxMS41VjEzLjVIMjUuNVYxNy41SDI3LjVWMTMuNVYxMS41SDI1LjVIMjEuNVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=")
     no-repeat 0 0 !important;
   background-size: 39px 78px;
@@ -220,13 +220,13 @@ path.leaflet-interactive:nth-child(22) {
     stroke: transparent;
   }
   25% {
-    stroke:#30988a;
+    stroke:var(--blauw);
   }
   30% {
     stroke: transparent;
   }
   35% {
-    stroke: #30988a
+    stroke: var(--blauw)
   }
   40% {
     stroke: transparent;
@@ -240,7 +240,9 @@ path.leaflet-interactive:nth-child(22) {
 }
 
 @media (min-width: 3000px) {
-  /* PANORAMA */
+  .leaflet-tooltip {
+    font-size:1.25  em;
+  }
   .leaflet-bar a,
   .leaflet-bar a:hover {
     width: 80px !important;

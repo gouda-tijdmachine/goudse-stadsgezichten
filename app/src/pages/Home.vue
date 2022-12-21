@@ -6,10 +6,7 @@
         <button v-if="this.$route.name !== 'Colofon'" class="button"><img src="../assets/images/icon_info.svg"/></button>
       </router-link>
     </div>
-
-    <div class="stylingBalk" id="stylingBalk1"></div>
     <Panorama></Panorama>
-    <div class="stylingBalk" id="stylingBalk2"></div>
     <Footer></Footer>
   </div>
 </template>
@@ -18,7 +15,7 @@
 import Panorama from "../components/Panorama.vue";
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
-import lijst84 from '../assets/data/gebouwen_1684.json';
+import gebouwen_1669 from '../assets/data/gebouwen_1641.json';
 
 export default {
   name: "HomePage",
@@ -30,8 +27,8 @@ export default {
   created() {
     this.$store.commit("data/setGekozenGebouwId", "");
     this.$store.commit("data/setGekozenGebouw", {});
-    this.$store.commit("data/setPanorama", "https://iiif2.hualab.nl/iiif/2/saftleven-panorama-1684.jpg/info.json");
-    this.$store.commit("data/setDataset", lijst84);
+    this.$store.commit("data/setPanorama", "https://www.goudatijdmachine.nl/data/iiif/2/93730/info.json");
+    this.$store.commit("data/setDataset", gebouwen_1669);
   },
   watch: {
     gekozenGebouwId() {
@@ -78,30 +75,14 @@ export default {
   justify-content: center;
   padding: 0px;
   position: relative;
+  box-shadow: 0 2px 6px var(--bijnazwart);
 }
 .Footer {
   grid-row: 5 / 5;
   grid-column: 2 / span 1;
   position: relative;
   z-index: 500;
-}
-
-#stylingBalk1 {
-  background: #3b3f54;
-  mix-blend-mode: overlay;
-  z-index: 500;
-  grid-row: 2 / span 1;
-  grid-column: 2 / span 1;
-  position: relative;
-}
-
-#stylingBalk2 {
-  background: #30988a;
-  mix-blend-mode: overlay;
-  z-index: 500;
-  grid-row: 4 / 4;
-  grid-column: 2 / 2;
-  position: relative;
+  box-shadow: 0 -2px 6px var(--bijnazwart);
 }
 
 .colofonbutton {
@@ -109,16 +90,18 @@ export default {
   grid-column: 3 / 3;
   z-index: 2;
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  padding-top: 20px;
+  padding-right: 20px;
 }
 
 .button {
-  background-color: #3b3f54;
+  background-color: var(--blauw);
   margin: 0 5px 5px 5px;
 }
 
 .button:hover {
-  background-color: #30988a;
+  background-color: var(--rood);
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {

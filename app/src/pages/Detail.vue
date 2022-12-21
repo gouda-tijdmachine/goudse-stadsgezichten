@@ -67,7 +67,7 @@ export default {
 .Afb {
   grid-row: 2 / 2;
   grid-column: 1 / span 1;
-  background-color: white;
+  background-color: var(--offwhite);
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
@@ -84,7 +84,7 @@ export default {
 }
 
 h1 {
-  color: #30988a;
+  color: var(--blauw);
 }
 
 span {
@@ -92,9 +92,9 @@ span {
 }
 
 #wiki {
-  background-color: #30988a;
+  background-color: var(--blauw);
 }
 #archief {
-  background-color: #455dc7;
+  background-color: var(--blauw);
 }
 </style>

@@ -12,8 +12,8 @@ export default {
 
 <style scoped>
 .Footer {
-  color: #fff;
-  background-color: #30988a;
+  color: var(--wit);
+  background-color: var(--rood);
   display: inline-flex;
 }
 

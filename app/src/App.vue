@@ -1,35 +1,28 @@
 <template>
   <div class="App">
-    <cookie-law theme="utrechtSkyline">
-      <div slot="message">
-        We plaatsen cookies om het gebruik van de website te analyseren en het gebruiksgemak te verbeteren. Door deze melding te sluiten of ergens op de website te klikken, gaat u hiermee akkoord.
-        <router-link to="Colofon">Cookievoorwaarden</router-link>
-      </div>
-    </cookie-law>
-
     <router-view />
   </div>
 </template>
 
-<script>
-import CookieLaw from "vue-cookie-law";
-
-export default {
-  name: "App",
-  components: { CookieLaw },
-};
-</script>
-
 <style>
 
 @font-face {
-  font-family: "Ropa Sans";
-  src: url("assets/fonts/RopaSans-Regular.otf") format("opentype"),
-    url("assets/fonts/RopaSans-Regular.ttf") format("truetype"),
-    url("assets/fonts/RopaSans-Regular.woff") format("woff"),
-    url("assets/fonts/RopaSans-Regular.woff2") format("woff2");
+  font-family: 'Source Sans Pro';
+  src: url("assets/fonts/SourceSansPro-Regular.otf") format("opentype"),
+    url("assets/fonts/SourceSansPro-Regular.ttf") format("truetype"),
+    url("assets/fonts/SourceSansPro-Regular.woff") format("woff"),
+    url("assets/fonts/SourceSansPro-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
+}
+
+:root {
+    --rood:#d12929;
+    --blauw:#3991b1;
+    --wit:#ffffff;
+    --offwhite:#efebe0;
+    --donkergrijs:#3b3f54;
+    --bijnazwart:#111111;
 }
 
 * {
@@ -41,34 +34,35 @@ export default {
 body {
   padding: 0;
   margin: 0;
-  background-color: #dacbb2;
-  color: #3b3f54;
+  background-color:var(--offwhite);
+  color:var(--bijnazwart);
 }
+
 .App {
   height: 100vh;
   width: 100vw;
-  font-family: "Ropa Sans", "Lato", Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background-color: #dacbb2;
+  background-color: var(--offwhite);
   margin: 0;
   padding: 0;
 }
 
 button {
   text-align: center;
-  font-family: "Ropa Sans", "Lato", Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 0.9em;
   border: none;
   cursor: pointer;
   padding: 15px;
   margin: 5px 5px 5px 0px;
-  color: white;
+  color: var(--offwhite);
 }
 
 a {
-  color: white;
+  color: var(--offwhite);
   text-decoration: none;
 }
 
@@ -88,46 +82,20 @@ a {
   display: none;
 }
 
-/* COOKIE STYLING */
-.Cookie--utrechtSkyline {
-  background: #f1f1f1;
-  color: #3b3f54;
-  text-align: left;
-  padding: 1.25em;
-}
-.Cookie--utrechtSkyline .Cookie__button {
-  background: #30988a;
-  padding: 0.625em 3.125em;
-  color: #fff;
-  border-radius: 0;
-  border: 0;
-  font-size: 1em;
-}
-.Cookie--utrechtSkyline .Cookie__button:hover {
-  background: #3b3f54;
-}
-
-.Cookie--utrechtSkyline a {
-  color: #30988a;
-  text-decoration: underline;
-}
-
-.Cookie--utrechtSkyline a:hover {
-  color: #3b3f54;
-}
-
 .tooltip {
   display: block !important;
   z-index: 10000;
   width: 30vw;
-  font-family: "Ropa Sans", "Lato", Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  color:var(--bijnazwart);
+  box-shadow: 2px 2px 5px var(--bijnazwart);
 }
 
 .tooltip .tooltip-inner {
-  background: #ffffff;
+  background: var(--offwhite);
   color: #4B4B4B;
   border-radius: 5px;
-  padding: 14px;
+  padding: 10px;
 }
 
 .tooltip .tooltip-arrow {
@@ -136,7 +104,7 @@ a {
   border-style: solid;
   position: absolute;
   margin: 5px;
-  border-color: #ffffff;
+  border-color: var(--offwhite);
   z-index: 1;
 }
 tooltip[x-placement^="top"] {
@@ -200,15 +168,15 @@ tooltip[x-placement^="top"] {
 }
 
 .tooltip.popover .popover-inner {
-  background: #f9f9f9;
-  color: black;
+  background: var(--offwhite);
+  color: var(--rood);
   padding: 24px;
   border-radius: 5px;
-  box-shadow: 0 5px 30px rgba(black, 0.1);
+  box-shadow: 0 5px 30px rgba(var(--bijnazwart), 0.1);
 }
 
 .tooltip.popover .popover-arrow {
-  border-color: #f9f9f9;
+  border-color: var(--offwhite);
 }
 
 .tooltip[aria-hidden="true"] {
