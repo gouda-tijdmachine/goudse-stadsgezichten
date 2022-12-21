@@ -135,7 +135,7 @@ export default {
   /*color: #3b3f54;
   background-color: #dacbb2;*/
   color: var(--wit);
-  background-color: var(--donkergrijs);
+  background-color: var(--grijs);
   overflow-y: hidden;
   overflow-x: hidden;
 }
@@ -148,7 +148,7 @@ export default {
 }
 
 #right {
-  background-color: var(--donkergrijs);
+  background-color: var(--grijs);
   color: #var(--blauw);
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
@@ -157,7 +157,7 @@ export default {
 }
 
 h1 {
-  color: var(--blauw);
+  color: var(--wit);
 }
 
 p {
