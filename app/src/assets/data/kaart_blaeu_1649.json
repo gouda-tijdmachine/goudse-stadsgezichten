@@ -6,6 +6,12 @@
             "type": "raster",
             "scheme": "xyz",
             "tiles": [
+                "https://mapwarper.net/maps/tile/68344/{z}/{x}/{y}.png",
+                "https://mapwarper.net/maps/tile/68344/{z}/{x}/{y}.png",
+                "https://mapwarper.net/maps/tile/68344/{z}/{x}/{y}.png",
+                "https://mapwarper.net/maps/tile/68344/{z}/{x}/{y}.png"
+            ],
+            "tiles.bak": [
                 "https://mapwarper.net/maps/tile/68249/{z}/{x}/{y}.png",
                 "https://mapwarper.net/maps/tile/68249/{z}/{x}/{y}.png",
                 "https://mapwarper.net/maps/tile/68249/{z}/{x}/{y}.png",
@@ -15,7 +21,7 @@
             "maxzoom": 17, 
             "bounds": [ 4.69,52.00,4.73,52.02],
             "attribution": "<b>Blaeu (1649)</b>",
-            "attribution_link": "https://www.goudatijdmachine.nl/data/afbeeldingen/document/ark:/60537/bumH54",
+            "attribution_link": "https://www.goudatijdmachine.nl/data/afbeeldingen/document/ark:/60537/bsunUJ",
             "tileSize": 256
         }
     },

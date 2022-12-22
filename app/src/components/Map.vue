@@ -15,7 +15,6 @@
       @click="onMapClick"
       @mousemove="onMapMoveMouse"
       :pitch="0"
-      :bearing="71"
     >
       <MglAttributionControl position="bottom-left" :compact="false" />
       <MglFullscreenControl position="top-right" />
