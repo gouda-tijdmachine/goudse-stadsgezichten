@@ -49,13 +49,13 @@ export default {
   color: var(--wit);
   background-color: var(--blauw);
   justify-content: space-between;
-  align-items: center;
   padding-left: 50px;
-  padding-right: 5px;
+  padding-right:0;
+
 }
 
 h1 {
-  margin-left:43px;
+  margin-left:10px;
   font-size:2.5em;
 }
 
@@ -63,17 +63,40 @@ h1 img {
   float:left;
   z-index:10;
   position:absolute;
-  left:4px;
-  width:80px;
-  height:80px;
+  left:5px;
+  width:45px;
+  height:45px;
+  margin-top:9px;
+}
+
+
+@media (max-width:700px) {
+  h1 { 
+   font-size: 1.2em; 
+   margin-top:8px;
+   margin-left:0 
+  }
+
+  h1 img {
+    left:5px;
+    width:45px;
+    height:45px;
+    margin-top:0px;
+  }
+
+  .home h1 { 
+    font-size:1.9em;
+    margin-left:0;
+  }
 }
 
 .button {
-  background-color: #3b3f54;
-  height: 50px;
+  background-color:transparent;
+  height: 63px;
+  margin:0;
 }
 .button:hover {
-  background-color: var(--blauw);
+  background-color: var(--rood);
 }
 
 /* TOGGLE */
@@ -81,31 +104,31 @@ input {
   display: none;
 }
 
-/* Color labels green by default */
 .role-selector input + span {
-  color: #00b0f0;
+  color: var(--wit);
   font-weight: bold;
 }
 .role-selector input + * + * + span {
-  color: #ffffff;
+  color: var(--wit);
   font-weight: normal;
 }
 
 /* Color labels when input is checked */
 .role-selector input:checked + span {
-  color: #ffffff;
+  color: var(--wit);
   font-weight: normal;
 }
 .role-selector input:checked + * + * + span {
-  color: #00b0f0;
+  color: var(--wit);
   font-weight: bold;
 }
 
 .role-selector {
   display: inline-flex;
-  background-color: #3b3f54;
+  background-color: var(--bruin);
   align-items: center;
   height: 50px;
+  margin-top:7px;
 }
 
 .toggle-text {

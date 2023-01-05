@@ -15,7 +15,7 @@
       <!-- <router-link v-if="wiki" :to="{name: 'Detail', params:{ id:$route.params.id}}">
         <button class="button" id="meer">Ontdek meer over dit gebouw</button>
       </router-link> -->
-      <p v-if="gebouw.properties.wikipedia" class="wikilink"><a :href="gebouw.properties.wikipedia" target="_blank" >Ontdek meer op Wikipedia</a></p>
+      <p v-if="gebouw.properties.wikipedia" class="wikilink"><a :href="gebouw.properties.wikipedia" target="_blank" >Meer info ...</a></p>
     </div>
     <div id="right">
       <CoolLightBox
@@ -30,10 +30,10 @@
         class="images-wrapper"
         v-if="images.length >=1"
         :scrollPerPage="true"
-        :perPageCustom="[[480, 3], [768, 4], [1000,6]]"
-        paginationActiveColor="#00b0f0"
+        :perPageCustom="[[480, 2], [768, 3], [1000,4]]"
+        paginationActiveColor="#3991b1"
         paginationColor="#ffffff"
-        :centerMode="true"
+        :centerMode="false"
         :paginationPadding="2"
       >
         <Slide
@@ -48,12 +48,12 @@
             :src="item.img.value"
             :key="itemIndex"
             :alt="item.description.value"
-            v-tooltip.top="'Afbl. : ' + item.description.value "
+            v-tooltip.top="item.description.value"
             @click="setIndex(itemIndex)"
           />
         </Slide>
       </Carousel>
-      <div v-else class="replacement">Geen afbeeldingen beschikbaar</div>
+      <div v-else class="replacement">Nog geen afbeeldingen beschikbaar</div>
     </div>
   </div>
 </template>
@@ -132,10 +132,8 @@ export default {
   display: grid;
   grid-template-columns: 35vw 65vw;
   grid-template-rows: 1fr;
-  /*color: #3b3f54;
-  background-color: #dacbb2;*/
   color: var(--wit);
-  background-color: var(--grijs);
+  background-color: var(--bruin);
   overflow-y: hidden;
   overflow-x: hidden;
 }
@@ -143,13 +141,12 @@ export default {
 #left {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
-  margin: 25px 50px 0px;
+  margin: 2em; /* 10px; klein */
   text-align: left;
 }
 
 #right {
-  background-color: var(--grijs);
-  color: #var(--blauw);
+  color: var(--blauw);
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
   justify-self: stretch;
@@ -158,11 +155,36 @@ export default {
 
 h1 {
   color: var(--wit);
+  font-size:2em;  /* 4vw klein */
 }
 
 p {
   margin-top: 10px;
   margin-bottom: 20px;
+}
+
+
+@media (max-width:700px) {
+  h1 {
+    color: var(--wit);
+    font-size:5vw;
+  }
+  p {
+    display:none;
+
+  }
+  p.wikilink {
+    position:absolute;
+    bottom:20px;
+    display:block;
+    font-size:4vw;
+    }
+    p.wikilink a {
+    }
+    #left {
+    margin: 15px;
+  }
+
 }
 
 .images-wrapper {
@@ -194,30 +216,5 @@ img {
   width: auto;
 }
 
-/* RESPONSIVENESS */
-
-@media (min-width: 3000px) {
-  
-  .VueCarousel-slide {
-  text-align: center;
-  height: 28vh;
-  }
-
-  img {
-  height: 28vh;
-  }
-  
-  #left {
-    font-size: 2em;
-    margin: 50px;
-  }
-
-  .button {
-    font-size: 0.9em;
-    margin: 50px 0px 0px 0px;
-  }
-  .wikilink {
-    display: none;
-  }
-}
+.replacement { padding:90px; color: var(--wit)}
 </style>

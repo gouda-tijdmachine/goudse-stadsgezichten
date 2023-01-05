@@ -13,7 +13,7 @@
             ],
             "minzoom": 0,
             "maxzoom": 17,
-            "bounds": [ 4.69,52.00,4.73,52.02],
+            "bounds": [ 4.69,52.00,4.73,52.04],
             "attribution": "<b>Hollandiae oppidum Gouda, accuratissimé ad vivum delineatum, et aeri incisum (1612 - 1648)</b>",
             "attribution_link": "https://www.goudatijdmachine.nl/data/afbeeldingen/document/ark:/60537/bIizeM",
             "tileSize": 256

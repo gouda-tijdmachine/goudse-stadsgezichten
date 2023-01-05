@@ -4,8 +4,8 @@
       :mapStyle="mapStyle"
       :center="center"
       :zoom="16"
-      :maxZoom="17"
-      :minZoom="14"
+      :maxZoom="18"
+      :minZoom="13"
       :maxBounds="maxBounds"
       :pitchWithRotate="false"
       :dragRotate="false"
@@ -220,12 +220,12 @@ export default {
 
 <style>
 .Map {
-  background-color: var(--lichtgijs);
+  background-color: var(--lichtgrijs);
 }
 
 .mapboxgl-ctrl-group {
   border-radius: 0px;
-  background: #3b3f54 !important;
+  background: var(--blauw) !important;
 }
 
 .mapboxgl-ctrl > button {
@@ -239,7 +239,7 @@ export default {
 }
 
 .mapboxgl-ctrl > button:disabled {
-  background-color: #fff;
+  background-color: var(--wit);
 }
 
 .mapboxgl-ctrl-zoom-in .mapboxgl-ctrl-icon {
@@ -276,51 +276,26 @@ export default {
 }
 
 .mapboxgl-popup-content {
-/*  font-family: "Ropa Sans", "Lato", Helvetica, Arial, sans-serif;*/
-  background: var(--lichtgijs);
-  padding:0 5px
+  font-family: 'Source Sans Pro', sans-serif !important;
+  background: var(--lichtgrijs);
+  padding:0 10px;
+  font-size:1.4em;
 }
 
 .mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip {
-  border-bottom-color:  var(--lichtgijs);
+  border-bottom-color:  var(--lichtgrijs);
 }
 .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip {
-  border-top-color: var(--lichtgijs);
+  border-top-color: var(--lichtgrijs);
 }
 .mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
-  border-right-color: var(--lichtgijs);
+  border-right-color: var(--lichtgrijs);
 }
 .mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
-  border-left-color: var(--lichtgijs);
-}
-
-/* RESPONSIVENESS */
-
-@media (min-width: 3000px) {
-  .mapboxgl-ctrl-group > button {
-    width: 80px;
-    height: 80px;
-  }
-
-  .mapboxgl-ctrl-fullscreen .mapboxgl-ctrl-icon {
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yMiAxNkgxNlYyMlYzNEgyMlYyMkgzNFYxNkgyMloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjIgNDZIMTZWNThWNjRIMjJIMzRWNThIMjJWNDZaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTY0IDQ2SDU4VjU4SDQ2VjY0SDU4SDY0VjU4VjQ2WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik00NiAxNlYyMkg1OFYzNEg2NFYyMlYxNkg1OEg0NloiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=") !important;
-  }
-
-  .mapboxgl-ctrl-shrink .mapboxgl-ctrl-icon {
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yMiAxNkgxNlYyMlYzNEgyMlYyMkgzNFYxNkgyMloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjIgNDZIMTZWNThWNjRIMjJIMzRWNThIMjJWNDZaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTY0IDQ2SDU4VjU4SDQ2VjY0SDU4SDY0VjU4VjQ2WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik00NiAxNlYyMkg1OFYzNEg2NFYyMlYxNkg1OEg0NloiIGZpbGw9IndoaXRlIi8+CjxyZWN0IHg9IjMxIiB5PSIzMSIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiByeD0iMiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==") !important;
-  }
-
-  .mapboxgl-ctrl-pitchtoggle-3d {
-    display: none !important;
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCI+DQo8dGV4dCB4PSI1MCUiIHk9IjUwJSIgZHk9Ii4zNWVtIiBmaWxsPSIjZmZmIiBzdHlsZT0iZm9udC1zaXplOiAzNnB4OyBmb250LWZhbWlseTogJ0hlbHZldGljYSBOZXVlJyxBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjsgZm9udC13ZWlnaHQ6IGJvbGQ7IHRleHQtYW5jaG9yOiBtaWRkbGU7Ij4zRDwvdGV4dD4NCjwvc3ZnPg==");
-  }
-  .mapboxgl-ctrl-pitchtoggle-2d {
-    display: none !important;
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCI+DQo8dGV4dCB4PSI1MCUiIHk9IjUwJSIgZHk9Ii4zNWVtIiBmaWxsPSIjZmZmIiBzdHlsZT0iZm9udC1zaXplOiAzNnB4OyBmb250LWZhbWlseTogJ0hlbHZldGljYSBOZXVlJyxBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjsgZm9udC13ZWlnaHQ6IGJvbGQ7IHRleHQtYW5jaG9yOiBtaWRkbGU7Ij4yRDwvdGV4dD4NCjwvc3ZnPg==");
-  }
+  border-left-color: var(--lichtgrijs);
 }
 </style>

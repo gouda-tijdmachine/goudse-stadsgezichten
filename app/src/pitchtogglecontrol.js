@@ -1,5 +1,5 @@
 export default class PitchToggle {
-    
+
     constructor({bearing = -20, pitch = 70, minpitchzoom = null}) {
         this._bearing = bearing;
         this._pitch = pitch;
@@ -27,7 +27,6 @@ export default class PitchToggle {
                 _this._btn.className = 'mapboxgl-ctrl-icon mapboxgl-ctrl-pitchtoggle-3d';
             } 
         };
-        
 
         this._container = document.createElement('div');
         this._container.className = 'mapboxgl-ctrl mapboxgl-ctrl-group';

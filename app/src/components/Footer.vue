@@ -13,11 +13,13 @@ export default {
 <style scoped>
 .Footer {
   color: var(--wit);
-  background-color: var(--rood);
+  background-color: var(--bruin);
   display: inline-flex;
 }
 
 h1 {
   margin: auto;
+  font-size:em;
+  padding:0 2em;
 }
 </style>

@@ -15,7 +15,7 @@
 import Panorama from "../components/Panorama.vue";
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
-import gebouwen_1669 from '../assets/data/gebouwen_1641.json';
+import gebouwen_1644 from '../assets/data/gebouwen_1644.json';
 
 export default {
   name: "HomePage",
@@ -28,8 +28,8 @@ export default {
     this.$store.commit("data/setGekozenGebouwId", "");
     this.$store.commit("data/setGekozenGebouw", {});
     this.$store.commit("data/setPanorama", "https://www.goudatijdmachine.nl/data/iiif/2/93730/info.json");
-    this.$store.commit("data/setDataset", gebouwen_1669);
-  },
+    this.$store.commit("data/setDataset", gebouwen_1644);
+  },  
   watch: {
     gekozenGebouwId() {
       if (this.gekozenGebouwId) {
@@ -54,13 +54,12 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .home {
   height: 100vh;
   display: grid;
-  grid-template-rows: 96px 24px auto 24px 96px;
-  grid-template-columns: 1fr 960px 1fr;
+  grid-template-rows: 63px 24px auto 24px 96px;
+  grid-template-columns: 1fr 100vw 1fr;
 }
 
 .Panorama {
@@ -75,29 +74,30 @@ export default {
   justify-content: center;
   padding: 0px;
   position: relative;
-  box-shadow: 0 2px 6px var(--bijnazwart);
+  box-shadow: 0 2px 10px var(--bijnazwart);
+  border:0;
 }
 .Footer {
   grid-row: 5 / 5;
   grid-column: 2 / span 1;
   position: relative;
   z-index: 500;
-  box-shadow: 0 -2px 6px var(--bijnazwart);
+  box-shadow: 0 -2px 10px var(--bijnazwart);
 }
 
 .colofonbutton {
-  grid-row: 1 / 1;
   grid-column: 3 / 3;
   z-index: 2;
   display: flex;
-  justify-content: right;
-  padding-top: 20px;
-  padding-right: 20px;
+  position:absolute;
+  top:0; 
+  right:0;
+  z-index:600;
 }
 
 .button {
-  background-color: var(--blauw);
-  margin: 0 5px 5px 5px;
+  background-color: transparent;
+  margin: 0;
 }
 
 .button:hover {

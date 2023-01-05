@@ -1,11 +1,8 @@
 <template>
   <div class="DrieLuik">
     <Header></Header>
-    <div class="gekleurdeBalk" id="gekleurdeBalk1"></div>
     <Panorama></Panorama>
-    <div class="gekleurdeBalk" id="gekleurdeBalk2"></div>
     <Map></Map>
-    <div class="gekleurdeBalk" id="gekleurdeBalk3"></div>
     <Carrousel></Carrousel>
   </div>
 </template>
@@ -63,7 +60,6 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .DrieLuik {
   height: 100vh;
@@ -72,13 +68,7 @@ export default {
   grid-template-columns: 320px repeat(2, 1fr);
   grid-template-rows: 56px repeat(2, 8px) 1fr repeat(2, 8px) 1fr repeat(2, 8px) 1fr;
 }
-.gekleurdeBalk {
-  background: var(--rood);
-  position: relative;
-  z-index: 500;
-  justify-self: stretch;
-  align-self: stretch;
-}
+
 #gekleurdeBalk1 {
   grid-row: 2 / span 2;
   grid-column: 2 / span 2;
@@ -102,36 +92,36 @@ export default {
   grid-row: 1 / span 2;
   grid-column: 1 / span 3;
   justify-self: stretch;
-  align-self: stretch;
+  align-self: stretch; 
+  border-bottom:2px solid var(--rood);
+  align-items:normal;
 }
+
 .Panorama {
   grid-row: 3 / span 3;
   grid-column: 1 / span 3;
   z-index: 1;
   justify-self: stretch;
   align-self: stretch;
+  border-top:1px solid var(--rood);
+  border-bottom:2px solid var(--rood);
 }
+
 .Map {
   grid-row: 6 / span 3;
   grid-column: 1 / span 3;
   justify-self: stretch;
   align-self: stretch;
+  border-top:1px solid var(--rood);
+  border-bottom:2px solid var(--rood);
 }
+
 .Carrousel {
   grid-row: 9 / span 2;
   grid-column: 1 / span 3;
   justify-self: stretch;
   align-self: stretch;
-}
-
-/* RESPONSIVENESS */
-
-@media (min-width: 3000px) {
-  
-  .Header {
-    padding-right: 25px;
-  }
-
+  border-top:2px solid var(--rood);
 }
 
 </style>

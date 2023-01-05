@@ -52,7 +52,6 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .Detail {
   height: 100vh;
@@ -67,7 +66,7 @@ export default {
 .Afb {
   grid-row: 2 / 2;
   grid-column: 1 / span 1;
-  background-color: var(--lichtgijs);
+  background-color: var(--bruin);
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;

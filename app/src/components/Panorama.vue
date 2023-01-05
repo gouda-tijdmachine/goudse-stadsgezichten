@@ -2,9 +2,9 @@
   <div class="Panorama">
     <LMap
       ref="map"
-      :minZoom="this.$route.name === 'DrieLuik' ? 2: 3"
-      :maxZoom="6"
-      :zoom="this.$route.name === 'DrieLuik' ? null : 0"
+      :zoom="this.$route.name === 'DrieLuik' ? 4 : 2"
+      :minZoom="this.$route.name === 'DrieLuik' ? 1 : 2"
+      :maxZoom="5"
       :crs="crs"
       :center="center"
       :options="{
@@ -163,7 +163,7 @@ export default {
 
 .leaflet-bar a,
 .leaflet-bar a:hover {
-  background: none repeat scroll 0 0 #3b3f54;
+  background: none repeat scroll 0 0 var(--blauw);
   color: var(--wit);
   border-radius: 0px;
   box-shadow: none;
@@ -176,7 +176,7 @@ export default {
 }
 
 .leaflet-control-fullscreen a {
-  background: #3b3f54
+  background: var(--blauw)
     url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzkiIGhlaWdodD0iNzgiIHZpZXdCb3g9IjAgMCAzOSA3OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy41IDUwLjVIMTEuNVY1Mi41VjU2LjVIMTMuNVY1Mi41SDE3LjVWNTAuNUgxMy41WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy41IDYwLjVIMTEuNVY2NC41VjY2LjVIMTMuNUgxNy41VjY0LjVIMTMuNVY2MC41WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yNy41IDYwLjVIMjUuNVY2NC41SDIxLjVWNjYuNUgyNS41SDI3LjVWNjQuNVY2MC41WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yMS41IDUwLjVWNTIuNUgyNS41VjU2LjVIMjcuNVY1Mi41VjUwLjVIMjUuNUgyMS41WiIgZmlsbD0id2hpdGUiLz4KPHJlY3QgeD0iMTYuNSIgeT0iNTUuNSIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjIiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTMuNSAxMS41SDExLjVWMTMuNVYxNy41SDEzLjVWMTMuNUgxNy41VjExLjVIMTMuNVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTMuNSAyMS41SDExLjVWMjUuNVYyNy41SDEzLjVIMTcuNVYyNS41SDEzLjVWMjEuNVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjcuNSAyMS41SDI1LjVWMjUuNUgyMS41VjI3LjVIMjUuNUgyNy41VjI1LjVWMjEuNVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjEuNSAxMS41VjEzLjVIMjUuNVYxNy41SDI3LjVWMTMuNVYxMS41SDI1LjVIMjEuNVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=")
     no-repeat 0 0 !important;
   background-size: 39px 78px;
@@ -236,48 +236,10 @@ path.leaflet-interactive:nth-child(22) {
   }
 }
 .leaflet-tooltip {
-  font-family: "Ropa Sans", "Lato", Helvetica, Arial, sans-serif !important;
+  font-family: 'Source Sans Pro', sans-serif !important;
+  background: var(--lichtgrijs);
+  padding:10x 30px;
+  font-size:1.4em;
 }
 
-@media (min-width: 3000px) {
-  .leaflet-tooltip {
-    font-size:1.25  em;
-  }
-  .leaflet-bar a,
-  .leaflet-bar a:hover {
-    width: 80px !important;
-    height: 80px !important;
-    line-height: 65px !important;
-  }
-
-  .leaflet-control-zoom-in {
-    font-size: 60px !important;
-  }
-
-  .leaflet-control-zoom-out {
-    font-size: 60px !important;
-  }
-
-  .leaflet-control-fullscreen a {
-    background: #3b3f54
-      url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iMTYwIiB2aWV3Qm94PSIwIDAgODAgMTYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTIyIDk2SDE2VjEwMlYxMTRIMjJWMTAySDM0Vjk2SDIyWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yMiAxMjZIMTZWMTM4VjE0NEgyMkgzNFYxMzhIMjJWMTI2WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02NCAxMjZINThWMTM4SDQ2VjE0NEg1OEg2NFYxMzhWMTI2WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik00NiA5NlYxMDJINThWMTE0SDY0VjEwMlY5Nkg1OEg0NloiIGZpbGw9IndoaXRlIi8+CjxyZWN0IHg9IjMxIiB5PSIxMTEiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgcng9IjIiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjIgMTZIMTZWMjJWMzRIMjJWMjJIMzRWMTZIMjJaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTIyIDQ2SDE2VjU4VjY0SDIySDM0VjU4SDIyVjQ2WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02NCA0Nkg1OFY1OEg0NlY2NEg1OEg2NFY1OFY0NloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNDYgMTZWMjJINThWMzRINjRWMjJWMTZINThINDZaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K")
-      no-repeat 0 0 !important;
-    background-size: 80px 160px;
-  }
-
-  .leaflet-fullscreen-on .leaflet-control-fullscreen a {
-    background-position: 0 -80px !important;
-  }
-
-  .leaflet-control-fullscreen a:hover {
-    background: #30988a
-      url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iMTYwIiB2aWV3Qm94PSIwIDAgODAgMTYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTIyIDk2SDE2VjEwMlYxMTRIMjJWMTAySDM0Vjk2SDIyWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yMiAxMjZIMTZWMTM4VjE0NEgyMkgzNFYxMzhIMjJWMTI2WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02NCAxMjZINThWMTM4SDQ2VjE0NEg1OEg2NFYxMzhWMTI2WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik00NiA5NlYxMDJINThWMTE0SDY0VjEwMlY5Nkg1OEg0NloiIGZpbGw9IndoaXRlIi8+CjxyZWN0IHg9IjMxIiB5PSIxMTEiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgcng9IjIiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjIgMTZIMTZWMjJWMzRIMjJWMjJIMzRWMTZIMjJaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTIyIDQ2SDE2VjU4VjY0SDIySDM0VjU4SDIyVjQ2WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02NCA0Nkg1OFY1OEg0NlY2NEg1OEg2NFY1OFY0NloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNDYgMTZWMjJINThWMzRINjRWMjJWMTZINThINDZaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K")
-      no-repeat 0 0 !important;
-    background-size: 80px 160px;
-  }
-
-  .leaflet-fullscreen-on .leaflet-control-fullscreen a:hover {
-    background-position: 0 -80px !important;
-  }
-}
 </style>

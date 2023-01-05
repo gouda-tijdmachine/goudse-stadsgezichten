@@ -1,27 +1,27 @@
-import lijst41 from '../../assets/data/gebouwen_1641.json';
-import lijst44 from '../../assets/data/gebouwen_1644.json';
+import gebouwen41 from '../../assets/data/gebouwen_1641.json';
+import gebouwen44 from '../../assets/data/gebouwen_1644.json';
 
-import Wais1641 from "../../assets/data/kaart_blaeu_1649.json";
-import Wais1644 from "../../assets/data/kaart_hollandiae_oppidum_gouda_1612_1648.json";
+import kaart1649 from "../../assets/data/kaart_blaeu_1649.json";
+import kaart1648 from "../../assets/data/kaart_hollandiae_oppidum_gouda_1612_1648.json";
 
 let datas = {
-  "Wais1641": lijst41,
-  "Wais1644": lijst44
+  "stadsgezicht1641": gebouwen41,
+  "stadsgezicht1644": gebouwen44
 }
-let styles = {
-  "Wais1641": Wais1641,
-  "Wais1644": Wais1644
+let maps = {
+  "stadsgezicht1641": kaart1649,
+  "stadsgezicht1644": kaart1648
 }
 let panoramas = {
-  "Wais1641": "https://www.goudatijdmachine.nl/data/iiif/2/93730/info.json",
-  "Wais1644": "https://www.goudatijdmachine.nl/data/iiif/2/93732/info.json"
+  "stadsgezicht1641": "https://www.goudatijdmachine.nl/data/iiif/2/93732/info.json",
+  "stadsgezicht1644": "https://www.goudatijdmachine.nl/data/iiif/2/93730/info.json"
 }
 export default {
   namespaced: true,
   state: {
-    data: datas["Wais1641"],
-    panorama:  panoramas["Wais1641"],
-    mapStyle: styles["Wais1641"],
+    data: datas["stadsgezicht1644"],
+    panorama:  panoramas["stadsgezicht1644"],
+    mapStyle: maps["stadsgezicht1644"],
     gekozenGebouwId: "",
     gekozenGebouw: {
       properties: ""
@@ -82,54 +82,53 @@ export default {
   },
   actions: {
     toggleMapStyle({ state, commit }) {
-      if (state.mapStyle === styles["Wais1644"]) {
-        commit("setMapStyle", styles["Wais1641"])
-        commit("setPanorama", panoramas["Wais1641"])
-        commit("setDataset", datas["Wais1641"])
+      if (state.mapStyle === maps["stadsgezicht1644"]) {
+        commit("setMapStyle", maps["stadsgezicht1641"])
+        commit("setPanorama", panoramas["stadsgezicht1641"])
+        commit("setDataset", datas["stadsgezicht1641"])
 
-      } else if (state.mapStyle === styles["Wais1641"]) {
-        commit("setMapStyle", styles["Wais1644"])
-        commit("setPanorama", panoramas["Wais1644"])
-        commit("setDataset", datas["Wais1644"])
+      } else if (state.mapStyle === maps["stadsgezicht1641"]) {
+        commit("setMapStyle", maps["stadsgezicht1644"])
+        commit("setPanorama", panoramas["stadsgezicht1644"])
+        commit("setDataset", datas["stadsgezicht1644"])
 
       }
     },
     getGekozenGebouwImages({ commit, state }) {
-      
+ 
       let sparqlQuery = `
-        PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        PREFIX dct: <http://purl.org/dc/terms/>
-        PREFIX dct: <http://purl.org/dc/terms/>   
-        PREFIX wd: <http://www.wikidata.org/entity/> 
-        SELECT DISTINCT * WHERE {
-          <https://hetutrechtsarchief.nl/id/utrecht-in-perspectief> <https://schema.org/hasPart> ?bb .
-          ?bb dct:spatial wd:${state.gekozenGebouw.properties.wdid} .
-          ?bb foaf:depiction ?img .
-          ?bb rdfs:label ?description .
-          ?bb dct:identifier ?catnr .
-          ?bb dct:date ?date .
+        PREFIX o: <http://omeka.org/s/vocabs/o#>
+        PREFIX dcterms: <http://purl.org/dc/terms/>
 
-        }
-        ORDER BY ?date
-        LIMIT 15
+        SELECT * WHERE {
+            <${state.gekozenGebouw.properties.pid}> o:media ?o .
+            ?o o:original_url ?img .
+            ?o o:id ?catnr .
+            ?o dcterms:title ?description .
+            OPTIONAL { ?o dcterms:date ?date . }
+            OPTIONAL { ?o dcterms:source ?source. }
+        } limit 15
       `
-      
-      fetch("https://data.netwerkdigitaalerfgoed.nl/hetutrechtsarchief/Dataset/sparql/Dataset?query=" + encodeURIComponent(sparqlQuery) ,
+
+      fetch("https://www.goudatijdmachine.nl/sparql/repositories/gtm?query=" + encodeURIComponent(sparqlQuery) ,
         {
           "headers": { "accept": "application/sparql-results+json" }, "method": "GET"
         })
         .then(response => response.json())
         .then(json => {
           if (json.results) {
+            console.log(json);
             commit('fillImageList', json.results.bindings)
           }
         })
     },
     getGekozenGebouwWiki({ commit, state }) {
+      commit('GET_WIKI', state.gekozenGebouw.properties.wikipedia)
+
       // Get wikipedia page from wikidata id
+      /*
       fetch(
-        `https://www.wikidata.org/w/api.php?action=wbgetentities&ids=${state.gekozenGebouw.properties.wdid}&sitefilter=nlwiki&props=sitelinks/urls&origin=*&format=json`,
+        `https://www.wikidata.org/w/api.php?action=wbgetentities&ids=${state.gekozenGebouw.properties.pid}&sitefilter=nlwiki&props=sitelinks/urls&origin=*&format=json`,
         {
           referrerPolicy: "origin-when-cross-origin",
           method: "GET",
@@ -160,6 +159,7 @@ export default {
           }
 
         });
+        */
     }
   }
 }

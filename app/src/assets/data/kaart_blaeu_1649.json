@@ -11,12 +11,6 @@
                 "https://mapwarper.net/maps/tile/68344/{z}/{x}/{y}.png",
                 "https://mapwarper.net/maps/tile/68344/{z}/{x}/{y}.png"
             ],
-            "tiles.bak": [
-                "https://mapwarper.net/maps/tile/68249/{z}/{x}/{y}.png",
-                "https://mapwarper.net/maps/tile/68249/{z}/{x}/{y}.png",
-                "https://mapwarper.net/maps/tile/68249/{z}/{x}/{y}.png",
-                "https://mapwarper.net/maps/tile/68249/{z}/{x}/{y}.png"
-            ],
             "minzoom": 0,
             "maxzoom": 17, 
             "bounds": [ 4.69,52.00,4.73,52.02],

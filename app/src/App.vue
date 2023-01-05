@@ -26,7 +26,7 @@
   --grijs: #666666;
   --lichtgroen: #dff0d8;
   --lichtrood: #f2dede;
-	--lichtblauw: #3991b133;
+  --lichtblauw: #3991b133;
 }
 
 * {
@@ -36,6 +36,9 @@
 }
 
 body {
+  position:absolute;
+  top:0; left:0;
+  hidden:overflow;
   padding: 0;
   margin: 0;
   background-color:var(--lichtgrijs);

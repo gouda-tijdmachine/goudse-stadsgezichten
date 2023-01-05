@@ -1,146 +1,61 @@
-{   
-    "Catharijnepoort": {
-        "id": "1904062",
+{
+    "Molen De Wip": {     
         "geometry":{
             "type":"Point",
-            "coordinates":[4.712566, 52.006923]
+            "coordinates":[4.7085, 52.0075]
         },
-        "bounds": [[-84,68],[-66,82]],
+        "bounds": [[-141.125,318.125],[-112,334.5]],
         "style": {
             "stroke": false,
             "fillColor": "#00b0f0",
-            "fillOpacity": 0.4
+            "fillOpacity": 0.2
         },
         "properties":{
-            "wdid":"Q1904062",
-            "label":"Molen 2",
+            "pid":"Q1904062",
+            "label":"Molen De Wip",
             "wikipedia":"https:\/\/nl.wikipedia.org\/wiki\/Catharijnepoort_(Utrecht)",
-            "types":[
-               "stadspoort"
-            ],
-            "users":[
-
-            ],
-            "uses":[
-
-            ],
-            "built_in":"1621",
-            "built_in_precision":"year",
-            "demolished_in":"1845",
-            "demolished_in_precision":"decade",
             "image":"http:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/Catharijnepoort-Hardenbergh.jpg",
             "description":"Een van de vier middeleeuwse stadspoorten aan de westzijde van de huidige binnenstad."
         }
     },
 
-    "Ten Hert": {
+    "Molen De Roode Leeuw": {
         "geometry":{
             "type":"Point",
-            "coordinates":[4.712566, 52.006923]
+            "coordinates":[4.7076, 52.00772]
         },
-        "bounds": [
-            [
-            -88,
-            172
-            ],
-            [
-            -50,
-            188
-            ]
-        ],
+        "bounds": [[-138,235.875],[-111.75,248]],
         "style": {
             "stroke": false,
             "fillColor": "#00b0f0",
-            "fillOpacity": 0.4
+            "fillOpacity": 0.2
         },
         "properties":{
-            "wdid":"Q1955870",
-            "label":"Poort 1",
-            "wikipedia":"https:\/\/nl.wikipedia.org\/wiki\/Ten_Hert",
-            "types":[
-               "stadskasteel"
-            ],
-            "users":[
-
-            ],
-            "uses":[
-
-            ],
-            "built_in":"1316",
-            "built_in_precision":"century",
-            "demolished_in":"",
-            "demolished_in_precision":"",
-            "image":"http:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/Huis%20met%20hert.JPG",
-            "description":"Eerste vermelding van dit stadskasteel aan de Oudegracht 86 dateert uit 1316 met als bewoner Beernt ten Hert."
+            "pid":"Q1904063",
+            "label":"Molen De Roode Leeuw",
+            "wikipedia":"https:\/\/nl.wikipedia.org\/wiki\/Catharijnepoort_(Utrecht)",
+            "image":"http:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/Catharijnepoort-Hardenbergh.jpg",
+            "description":"Een van de vier middeleeuwse stadspoorten aan de westzijde van de huidige binnenstad."
         }
     },
 
-    "Oudaen": {
-        "geometry":{
+    "St. Janskerk": {
+        "geometry":{ 
             "type":"Point",
-            "coordinates":[4.712566, 52.006923]
+            "coordinates":[4.7111, 52.011]
         },
-
-        "bounds": [[-86,240],[-62,250]],
+        "bounds": [[-135.125,249.625],[-94.875,279.5]],
         "style": {
             "stroke": false,
             "fillColor": "#00b0f0",
-            "fillOpacity": 0.4
+            "fillOpacity": 0.2
         },
         "properties":{
-            "wdid":"Q1820630",
-            "label":"poort 2",
-            "wikipedia":"https:\/\/nl.wikipedia.org\/wiki\/Oudaen_(Utrecht)",
-            "types":[
-            "stadskasteel"
-            ],
-            "users":[
-
-            ],
-            "uses":[
-
-            ],
-            "built_in":"1270",
-            "built_in_precision":"century",
-            "demolished_in":"",
-            "demolished_in_precision":"",
-            "image":"http:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/Kasteel%20Oudaen.JPG",
-            "description":"Kort na 1276 gebouwd als stadskasteel aan de Oudegracht 99, eerst van de familie Zoudenbalch, later van de familie Oudaen. In de 18e eeuw werd het een oude mannen- en vrouwenhuis."
-        }
-    },
-
-    "Drakenburg": {
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.712566, 52.006923]
-        },
-        "bounds": [
-            [-85,286],[-66,294]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.4
-        },
-        "properties":{
-            "wdid":"Q2340974",
-            "label":"poort 3",
-            "wikipedia":"https:\/\/nl.wikipedia.org\/wiki\/Drakenburg_(huis)",
-            "types":[
-               "woonhuis",
-               "stadskasteel"
-            ],
-            "users":[
-
-            ],
-            "uses":[
-
-            ],
-            "built_in":"1200",
-            "built_in_precision":"century",
-            "demolished_in":"",
-            "demolished_in_precision":"",
-            "image":"http:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/Oudegracht%20114.JPG",
-            "description":"Dit stadskasteel aan de Oudegracht 114 stamt uit de 12e eeuw."
+            "pid":"Q1904063",
+            "label":"St. Janskerk",
+            "wikipedia":"https:\/\/nl.wikipedia.org\/wiki\/Catharijnepoort_(Utrecht)",
+            "image":"http:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/Catharijnepoort-Hardenbergh.jpg",
+            "description":"Een van de vier middeleeuwse stadspoorten aan de westzijde van de huidige binnenstad."
         }
     }
 }
