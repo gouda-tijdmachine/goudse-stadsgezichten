@@ -141,7 +141,7 @@ export default {
 #left {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
-  margin: 2em; /* 10px; klein */
+  margin: 15px; 
   text-align: left;
 }
 
@@ -163,7 +163,6 @@ p {
   margin-bottom: 20px;
 }
 
-
 @media (max-width:700px) {
   h1 {
     color: var(--wit);
@@ -179,12 +178,6 @@ p {
     display:block;
     font-size:4vw;
     }
-    p.wikilink a {
-    }
-    #left {
-    margin: 15px;
-  }
-
 }
 
 .images-wrapper {
