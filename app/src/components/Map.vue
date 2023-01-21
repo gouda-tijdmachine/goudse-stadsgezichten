@@ -82,14 +82,6 @@ export default {
       this.map = event.map;
       this.map.touchZoomRotate.disableRotation();
       this.map.touchPitch = false;
-      this.map.addControl(
-        new PitchToggle({
-          bearing: 71,
-          pitch: 60,
-          minpitchzoom: null,
-        }),
-        "top-left"
-      );
       this.geojson.features.forEach((item) => {
         if (item.properties.label === this.gekozenGebouw.properties.label) {
           event.map.flyTo({ center: item.geometry.coordinates });
@@ -117,7 +109,8 @@ export default {
         layers: ["gebouwen"],
       });
       event.map.flyTo({ center: [e.lngLat.lng, e.lngLat.lat] });
-      if (layercontent && layercontent[0] && layercontent[0].layer) {
+      console.log("[" + e.lngLat.lng + "," + e.lngLat.lat+"]");
+	   if (layercontent && layercontent[0] && layercontent[0].layer) {
         let geb = layercontent[0].properties;
 
         this.$store.commit("data/setGekozenGebouwId", geb.label);
@@ -195,8 +188,8 @@ export default {
           "circle-color": [
             "case",
             ["==", ["get", "label"], this.gekozenGebouwId],
-            "rgba(255,0,0,0.4)",
-            "rgba(0,176,240,0.6)", 
+            "rgba(255,0,0,0.2)",
+            "rgba(0,176,240,0.2)", 
           ],
           "circle-opacity": 1,
           "circle-stroke-color": "rgb(218, 203, 178)",

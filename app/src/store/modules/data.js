@@ -8,12 +8,12 @@ let datas = {
   "stadsgezicht1641": gebouwen41,
   "stadsgezicht1644": gebouwen44
 }
-let maps = {
+let styles = {
   "stadsgezicht1641": kaart1649,
   "stadsgezicht1644": kaart1648
 }
 let panoramas = {
-  "stadsgezicht1641": "https://www.goudatijdmachine.nl/data/iiif/2/93732/info.json",
+  "stadsgezicht1641": "https://iiif2.hualab.nl/iiif/2/saftleven-panorama-1669.jpg/info.json",
   "stadsgezicht1644": "https://www.goudatijdmachine.nl/data/iiif/2/93730/info.json"
 }
 export default {
@@ -21,7 +21,7 @@ export default {
   state: {
     data: datas["stadsgezicht1644"],
     panorama:  panoramas["stadsgezicht1644"],
-    mapStyle: maps["stadsgezicht1644"],
+    mapStyle: styles["stadsgezicht1644"],
     gekozenGebouwId: "",
     gekozenGebouw: {
       properties: ""
@@ -82,19 +82,19 @@ export default {
   },
   actions: {
     toggleMapStyle({ state, commit }) {
-      if (state.mapStyle === maps["stadsgezicht1644"]) {
-        commit("setMapStyle", maps["stadsgezicht1641"])
-        commit("setPanorama", panoramas["stadsgezicht1641"])
-        commit("setDataset", datas["stadsgezicht1641"])
-
-      } else if (state.mapStyle === maps["stadsgezicht1641"]) {
-        commit("setMapStyle", maps["stadsgezicht1644"])
+      if (state.mapStyle === styles["stadsgezicht1641"]) {
+        commit("setMapStyle", styles["stadsgezicht1644"])
         commit("setPanorama", panoramas["stadsgezicht1644"])
         commit("setDataset", datas["stadsgezicht1644"])
 
+      } else if (state.mapStyle === styles["stadsgezicht1644"]) {
+        commit("setMapStyle", styles["stadsgezicht1641"])
+        commit("setPanorama", panoramas["stadsgezicht1641"])
+        commit("setDataset", datas["stadsgezicht1641"])
+
       }
     },
-    getGekozenGebouwImages({ commit, state }) {
+     getGekozenGebouwImages({ commit, state }) {
  
       let sparqlQuery = `
         PREFIX o: <http://omeka.org/s/vocabs/o#>
@@ -117,7 +117,7 @@ export default {
         .then(response => response.json())
         .then(json => {
           if (json.results) {
-            console.log(json);
+//            console.log(json);
             commit('fillImageList', json.results.bindings)
           }
         })

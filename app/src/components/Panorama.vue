@@ -2,9 +2,9 @@
   <div class="Panorama">
     <LMap
       ref="map"
-      :zoom="this.$route.name === 'DrieLuik' ? 4 : 2"
-      :minZoom="this.$route.name === 'DrieLuik' ? 1 : 2"
-      :maxZoom="5"
+      :minZoom="this.$route.name === 'DrieLuik' ? 1: 1"
+      :maxZoom="6"
+      :zoom="this.$route.name === 'DrieLuik' ? 1 : 3"
       :crs="crs"
       :center="center"
       :options="{
@@ -19,8 +19,8 @@
         v-for="(gebouw, name) in this.gebouwen"
         :interactive="true"
         :bounds="gebouw.bounds"
-        v-bind:fillColor=" name === gekozenGebouwId ?  'rgb(255,0,0)'  : gebouw.style.fillColor "
-        v-bind:fillOpacity=" name === gekozenGebouwId ?  0.4  : gebouw.style.fillOpacity "
+        v-bind:fillColor=" name === gekozenGebouwId ?  'rgb(255,0,0)'  : 'rgb(0,176,240)' "
+        v-bind:fillOpacity=" name === gekozenGebouwId ?  0.2  : 0.1 "
         :stroke="gebouw.style.stroke"
         :key="name"
         @click="handleClick(name)"
@@ -53,9 +53,9 @@ export default {
   },
   data() {
     return {
-      center: [-70,210],
+      center: [-30, 156.3],
       crs: CRS.Simple,
-      opacity: 1,
+      opacity: 0.8,
       touchZoom: true,
       inertia: true,
       fadeAnimation: true,
@@ -139,7 +139,7 @@ export default {
       if (layer.options.className !== this.gekozenGebouwId) {
         layer.setStyle({
           fillColor: "rgb(0,176,240)",
-          fillOpacity: 0.4,
+          fillOpacity: 0.3,
         });
       }
     },
@@ -152,6 +152,11 @@ export default {
   color: #fff;
   background-color: var(--wit);
 }
+path {
+  stroke-width: 1px;
+  outline:0;
+  stroke:var(--wit);
+}
 
 .leaflet-container {
   background: var(--wit);
@@ -160,7 +165,6 @@ export default {
 .leaflet-bar {
   box-shadow: none;
 }
-
 .leaflet-bar a,
 .leaflet-bar a:hover {
   background: none repeat scroll 0 0 var(--blauw);
@@ -195,44 +199,42 @@ export default {
 .leaflet-fullscreen-on .leaflet-control-fullscreen a:hover {
   background-position: 0 -39px !important;
 }
-
-path.leaflet-interactive:nth-child(15) {
+/*
+path.leaflet-interactive:nth-child(5) {
   animation: blinkingBorder 15s;
-  /* animation-delay: 1s; */
+  animation-delay: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  stroke-width: 5px;
 }
 
-path.leaflet-interactive:nth-child(22) {
+path.leaflet-interactive:nth-child(16) {
   animation: blinkingBorder 15s;
   animation-delay: 8s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  stroke-width: 5px;
 }
-
+*/
 @keyframes blinkingBorder {
   0% {
-    stroke: transparent;
+    stroke: var(--wit);
   }
   24% {
-    stroke: transparent;
+    stroke: var(--wit);
   }
   25% {
-    stroke:var(--blauw);
+    stroke:var(--bruin);
   }
   30% {
-    stroke: transparent;
+    stroke: var(--wit);
   }
   35% {
-    stroke: var(--blauw)
+    stroke: var(--bruin)
   }
   40% {
-    stroke: transparent;
+    stroke: var(--wit);
   }
   100% {
-    stroke: transparent;
+    stroke: var(--wit);
   }
 }
 .leaflet-tooltip {

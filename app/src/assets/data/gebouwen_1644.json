@@ -1,124 +1,379 @@
 {
-    "Molen De Wip": {     
+	"Mallegatsluis met brug": {     
         "geometry":{
             "type":"Point",
-            "coordinates":[4.707, 52.0082]
+            "coordinates":[4.7093,52.0066]
         },
-        "bounds": [[[-79.625,53],[-61.75,70.25]]],
+        "bounds": [[-100.549992,10.775],[-75.381478,62.599998]],
         "style": {
             "stroke": false,
             "fillColor": "#00b0f0",
-            "fillOpacity": 0.2
+            "fillOpacity": 0.1
         },
         "properties":{
             "pid":"https://n2t.net/ark:/60537/bPNPD4",
-            "label":"Molen De Wip",
-            "wikipedia":"https:\/\/nl.wikipedia.org\/wiki\/Catharijnepoort_(Utrecht)",
-            "image":"http:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/Catharijnepoort-Hardenbergh.jpg",
-            "description":"Een van de vier middeleeuwse stadspoorten aan de westzijde van de huidige binnenstad."
+            "label":"Mallegatsluis met brug",
+            "description":"TODO"
         }
     },
 
-    "Molen De Roode Leeuw": {
+  "Molens langs de Turfsingel, waarschijnlijk De Roode Leeuw en de Korenblom": {
         "geometry":{
             "type":"Point",
-            "coordinates":[4.7046, 52.009]
+            "coordinates":[4.7070,52.0082]
         },
-        "bounds": [[[-82.625,70.5],[-68.125,81.75]]],
+        "bounds": [[-83.435992,53.05],[-62.150002,82.324996]],
         "style": {
             "stroke": false,
             "fillColor": "#00b0f0",
-            "fillOpacity": 0.2
+            "fillOpacity": 0.1
         },
         "properties":{
             "pid":"https://n2t.net/ark:/60537/bJYekL",
-            "label":"Molen De Roode Leeuw",
-            "wikipedia":"https:\/\/nl.wikipedia.org\/wiki\/De_Roode_Leeuw",
-            "image":"https:\/\/upload.wikimedia.org/wikipedia\/commons\/thumb\/1\/13\/Molen_de-Roode-Leeuw_Gouda2.jpg\/399px-Molen_de-Roode-Leeuw_Gouda2.jpg",
-            "description":"In 1619 is deze houten wipkorenmolen met stelling gebouwd. Omstreeks 1727 werd op deze plek een ronde stenen stellingmolen gebouwd, de Roode Leeuw. Deze korenmolen is nog steeds operationeel.",
-            "moreinfo":"https:\/\/www.molens.nl\/ontdek-molens\/alle-molens\/de-roode-leeuw-te-gouda" 
+            "label":"Molens langs de Turfsingel, waarschijnlijk De Roode Leeuw en de Korenblom",
+            "description":"TODO"
         }
     },
-
-    "Dijckspoort": {
+	
+   "Dijkspoort of Rotterdamse Poort": {
         "geometry":{
             "type":"Point",
-            "coordinates":[4.711, 52.0069]
+            "coordinates":[4.7110,52.0067]
         },
-        "bounds": [
-            [[-82.375,118.625],[-59.5,146.875]]
-        ],
-        "style": {
+        "bounds": [[-87.350002,131.074996],[-59.333808,147.524994]],
+       "style": {
             "stroke": false,
             "fillColor": "#00b0f0",
-            "fillOpacity": 0.2
+            "fillOpacity": 0.1
         },
         "properties":{
             "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"Dijckspoort",
-            "wikipedia":"https:\/\/nl.wikipedia.org\/wiki\/Ten_Hert",
-            "image":"http:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/Huis%20met%20hert.JPG",
-            "description":"Eerste vermelding van dit stadskasteel aan de Oudegracht 86 dateert uit 1316 met als bewoner Beernt ten Hert."
+            "label":"Dijkspoort of Rotterdamse Poort",
+            "description":"TODO"
         }
     },
 
-    "Veer of stadspoort": {
+    "Veerstal": {
         "geometry":{
             "type":"Point",
             "coordinates":[4.7119, 52.0066]
         },
-        "bounds": [[-88.125,173.75],[-54.5,188.25]],
-        "style": {
+        "bounds": [[-105.100006,99.574996],[-88.850344,172.649998]],
+       "style": {
             "stroke": false,
             "fillColor": "#00b0f0",
-            "fillOpacity": 0.2
+            "fillOpacity": 0.1
         },
         "properties":{
             "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"Veer of stadspoort",
-            "wikipedia":"https:\/\/nl.wikipedia.org\/wiki\/Oudaen_(Utrecht)",
-            "image":"http:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/Kasteel%20Oudaen.JPG",
-            "description":"Kort na 1276 gebouwd als stadskasteel aan de Oudegracht 99, eerst van de familie Zoudenbalch, later van de familie Oudaen. In de 18e eeuw werd het een oude mannen- en vrouwenhuis."
+            "label":"Veerstal",
+            "description":"TODO"
         }
     },
 
-    "Tolhuys en poort": {
+    "Kleine Volmolen": {
         "geometry":{
             "type":"Point",
             "coordinates":[4.7131, 52.0067]
         },
-        "bounds":[[[-87,241.125],[-63.25,250.625]]],
-        "style": {
+        "bounds":[[-88.225002,159.25],[-69.75,174.525002]],
+       "style": {
             "stroke": false,
             "fillColor": "#00b0f0",
-            "fillOpacity": 0.2
+            "fillOpacity": 0.1
         },
         "properties":{
             "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"Tolhuys en poort",
-            "wikipedia":"https:\/\/nl.wikipedia.org\/wiki\/Drakenburg_(huis)",
-            "image":"http:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/Oudegracht%20114.JPG",
-            "description":"Dit stadskasteel aan de Oudegracht 114 stamt uit de 12e eeuw."
+            "label":"Kleine Volmolen",
+            "description":"TODO"
         }
     },
 
-    "t Slot": {
+    "Veerstalpoort of Waterpoort": {
         "geometry":{
             "type":"Point",
             "coordinates":[4.715, 52.007]
         },
-        "bounds": [[-76.75,336.125],[-55.75,351.25]],
+        "bounds": [[-88.550174,175.074996],[-53.930782,186.97499]],
         "style": {
             "stroke": false,
             "fillColor": "#00b0f0",
-            "fillOpacity": 0.2
+            "fillOpacity": 0.1
+        },
+       "properties":{
+            "pid":"https://n2t.net/ark:/60537/bSvVz4",
+            "label":"Veerstalpoort of Waterpoort",
+            "description":"TODO"
+        }
+    },
+
+    "Veerstalstoep": {
+        "geometry":{
+            "type":"Point",
+            "coordinates":[4.715, 52.007]
+        },
+        "bounds": [[-106.900002,173.224998],[-89.400002,185.800004]],
+        "style": {
+            "stroke": false,
+            "fillColor": "#00b0f0",
+            "fillOpacity": 0.1
+        },
+       "properties":{
+            "pid":"https://n2t.net/ark:/60537/bSvVz4",
+            "label":"Veerstalstoep",
+            "description":"TODO"
+        }
+    },
+
+    "'t Hoofd": {
+        "geometry":{
+            "type":"Point",
+            "coordinates":[4.715, 52.007]
+        },
+        "bounds": [[-107.462006,186.97499],[-94.85494,277.774986]],
+        "style": {
+            "stroke": false,
+            "fillColor": "#00b0f0",
+            "fillOpacity": 0.1
+        },
+       "properties":{
+            "pid":"https://n2t.net/ark:/60537/bSvVz4",
+            "label":"'t Hoofd",
+            "description":"TODO"
+        }
+    },
+
+    "Pieter Hugesztoren": {
+        "geometry":{
+            "type":"Point",
+            "coordinates":[4.715, 52.007]
+        },
+        "bounds": [[-85.749842,215.674988],[-57.534036,223.374992]],
+       "style": {
+            "stroke": false,
+            "fillColor": "#00b0f0",
+            "fillOpacity": 0.1
         },
         "properties":{
             "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"t Slot",
-            "wikipedia":"https:\/\/nl.wikipedia.org\/wiki\/Oudaen_(Utrecht)",
-            "image":"http:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/Kasteel%20Oudaen.JPG",
-            "description":"'t Slot is een korenmolen gelegen aan de Punt 17 in Gouda. De molen is in 1832 gebouwd als vervanging van een eerdere achtkante stellingmolen die in 1831 door brand werd verwoest. Het is de derde molen op de plaats waar het kasteel van de Heeren van Ter Gouw ooit stond. De eerste molen op die plaats dateerde van 1581. Sinds 1962 is de gemeente Gouda eigenaar van de molen. Van 2003 tot 2005 is 't Slot gerestaureerd."
+            "label":"Pieter Hugesztoren",
+            "description":"TODO"
+        }
+    },
+
+    "Toren van de Sint-Janskerk": {
+        "geometry":{
+            "type":"Point",
+            "coordinates":[4.715, 52.007]
+        },
+        "bounds": [[-65.738632,225.674988],[-44.175,235.125]],
+        "style": {
+            "stroke": false,
+            "fillColor": "#00b0f0",
+            "fillOpacity": 0.1
+        },
+       "properties":{
+            "pid":"https://n2t.net/ark:/60537/bSvVz4",
+            "label":"Toren van de Sint-Janskerk",
+            "description":"TODO"
+        }
+    },
+
+    "Tol(huis)poort": {
+        "geometry":{
+            "type":"Point",
+            "coordinates":[4.715, 52.007]
+        },
+        "bounds": [[-86.949996,240.474998],[-61.536278,251]],
+        "style": {
+            "stroke": false,
+            "fillColor": "#00b0f0",
+            "fillOpacity": 0.1
+        },
+       "properties":{
+            "pid":"https://n2t.net/ark:/60537/bSvVz4",
+            "label":"Tol(huis)poort",
+            "description":"TODO"
+        }
+    },
+
+    "Tolhuis": {
+        "geometry":{
+            "type":"Point",
+            "coordinates":[4.715, 52.007]
+        },
+        "bounds": [[-74.543564,250.474998],[-59.375,265.375]],
+       "style": {
+            "stroke": false,
+            "fillColor": "#00b0f0",
+            "fillOpacity": 0.1
+        },
+        "properties":{
+            "pid":"https://n2t.net/ark:/60537/bSvVz4",
+            "label":"Tolhuis",
+            "description":"TODO"
+        }
+    },
+
+    "Sluiswachterswoning of Huisje van Jan Simpel": {
+        "geometry":{
+            "type":"Point",
+            "coordinates":[4.715, 52.007]
+        },
+        "bounds": [[-89.274998,258.07499],[-70.675,271.475002]],
+       "style": {
+            "stroke": false,
+            "fillColor": "#00b0f0",
+            "fillOpacity": 0.1
+        },
+        "properties":{
+            "pid":"https://n2t.net/ark:/60537/bSvVz4",
+            "label":"Sluiswachterswoning of Huisje van Jan Simpel",
+            "description":"TODO"
+        }
+    },
+
+    "Haveningang met drijvende balk": {
+        "geometry":{
+            "type":"Point",
+            "coordinates":[4.715, 52.007]
+        },
+        "bounds": [[-107.662114,278.474998],[-89.952196,292.474998]],
+       "style": {
+            "stroke": false,
+            "fillColor": "#00b0f0",
+            "fillOpacity": 0.1
+        },
+        "properties":{
+            "pid":"https://n2t.net/ark:/60537/bSvVz4",
+            "label":"Haveningang met drijvende balk",
+            "description":"TODO"
+        }
+    },
+
+    "Nieuwe Veerstal": {
+        "geometry":{
+            "type":"Point",
+            "coordinates":[4.715, 52.007]
+        },
+        "bounds": [[-101.25505,293.125],[-89.725002,361.65001]],
+       "style": {
+            "stroke": false,
+            "fillColor": "#00b0f0",
+            "fillOpacity": 0.1
+        },
+        "properties":{
+            "pid":"https://n2t.net/ark:/60537/bSvVz4",
+            "label":"Nieuwe Veerstal",
+            "description":"TODO"
+        }
+    },
+
+    "Kleine IJsseltoren of Haventoren van het vm. kasteel, nu Zakkendragershuisje": {
+        "geometry":{
+            "type":"Point",
+            "coordinates":[4.715, 52.007]
+        },
+        "bounds": [[-89.748606,272.074994],[-59.931904,286.574996]],
+       "style": {
+            "stroke": false,
+            "fillColor": "#00b0f0",
+            "fillOpacity": 0.1
+        },
+        "properties":{
+            "pid":"https://n2t.net/ark:/60537/bSvVz4",
+            "label":"Kleine IJsseltoren of Haventoren van het vm. kasteel, nu Zakkendragershuisje",
+            "description":"TODO"
+        }
+    },
+
+    "Nieuwe Veerstalpoort": {
+        "geometry":{
+            "type":"Point",
+            "coordinates":[4.715, 52.007]
+        },
+        "bounds": [[-88.047652,286.674996],[-67.836334,294.674996]],
+        "style": {
+            "stroke": false,
+            "fillColor": "#00b0f0",
+            "fillOpacity": 0.1
+        },
+       "properties":{
+            "pid":"https://n2t.net/ark:/60537/bSvVz4",
+            "label":"Nieuwe Veerstalpoort",
+            "description":"TODO"
+        }
+    },
+
+    "Kruittoren of Kapeltoren van het vm. kasteel, nu Chartertoren": {
+        "geometry":{
+            "type":"Point",
+            "coordinates":[4.715, 52.007]
+        },
+        "bounds": [[-74.139862,310.674996],[-57.475,323.125]],
+        "style": {
+            "stroke": false,
+            "fillColor": "#00b0f0",
+            "fillOpacity": 0.1
+        },
+       "properties":{
+            "pid":"https://n2t.net/ark:/60537/bSvVz4",
+            "label":"Kruittoren of Kapeltoren van het vm. kasteel, nu Chartertoren",
+            "description":"TODO"
+        }
+    },
+
+    "Molen ‘t Slot": {
+        "geometry":{
+            "type":"Point",
+            "coordinates":[4.715, 52.007]
+        },
+        "bounds": [[-75.640702,336.025002],[-55.175,351.074996]],
+       "style": {
+            "stroke": false,
+            "fillColor": "#00b0f0",
+            "fillOpacity": 0.1
+        },
+        "properties":{
+            "pid":"https://n2t.net/ark:/60537/bSvVz4",
+            "label":"Molen ‘t Slot",
+            "description":"TODO"
+        }
+    },
+
+    "Bolwerk De Punt": {
+        "geometry":{
+            "type":"Point",
+            "coordinates":[4.715, 52.007]
+        },
+        "bounds": [[-88.849998,352.5],[-74.640142,401.774994]],
+        "style": {
+            "stroke": false,
+            "fillColor": "#00b0f0",
+            "fillOpacity": 0.1
+        },
+       "properties":{
+            "pid":"https://n2t.net/ark:/60537/bSvVz4",
+            "label":"Bolwerk De Punt",
+            "description":"TODO"
+        }
+    },
+
+    "Crabbelenbrug": {
+        "geometry":{
+            "type":"Point",
+            "coordinates":[4.715, 52.007]
+        },
+        "bounds": [[-101.655276,362.375],[-89.724998,400.875]],
+        "style": {
+            "stroke": false,
+            "fillColor": "#00b0f0",
+            "fillOpacity": 0.1
+        },
+			"properties":{
+            "pid":"https://n2t.net/ark:/60537/bSvVz4",
+            "label":"Crabbelenbrug",
+            "description":"TODO"
         }
     }
 }
