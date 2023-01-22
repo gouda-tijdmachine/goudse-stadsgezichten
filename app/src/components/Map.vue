@@ -185,8 +185,8 @@ export default {
           "circle-color": [
             "case",
             ["==", ["get", "label"], this.gekozenGebouwId],
-            "rgba(255,0,0,0.2)",
-            "rgba(0,176,240,0.2)", 
+            "rgba(255,0,0,0.1)",
+            "rgba(0,176,240,0.1)", 
           ],
           "circle-opacity": 1,
           "circle-stroke-color": "rgb(218, 203, 178)",

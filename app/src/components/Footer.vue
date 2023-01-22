@@ -1,6 +1,6 @@
 <template>
   <div class="Footer">
-    <h1>Kies een gebouw om verder te gaan</h1>
+    <h1>Kies een onderdeel op het stadsgezicht uit 1644 om verder te gaan</h1>
   </div>
 </template>
 

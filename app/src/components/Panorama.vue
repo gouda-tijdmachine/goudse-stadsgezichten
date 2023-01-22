@@ -20,7 +20,7 @@
         :interactive="true"
         :bounds="gebouw.bounds"
         v-bind:fillColor=" name === gekozenGebouwId ?  'rgb(255,0,0)'  : 'rgb(0,176,240)' "
-        v-bind:fillOpacity=" name === gekozenGebouwId ?  0.2  : 0.1 "
+        v-bind:fillOpacity=" name === gekozenGebouwId ?  0.1  : 0.05 "
         :stroke="gebouw.style.stroke"
         :key="name"
         @click="handleClick(name)"
@@ -130,8 +130,8 @@ export default {
     doHighlight(layer) {
       if (layer.options.className !== this.gekozenGebouwId) {
         layer.setStyle({
-          fillColor: "rgb(255,0,0)",
-          fillOpacity: 0.4,
+          fillColor: "rgb(0,176,240)",
+          fillOpacity: 0.35,
         });
       }
     },
@@ -139,7 +139,7 @@ export default {
       if (layer.options.className !== this.gekozenGebouwId) {
         layer.setStyle({
           fillColor: "rgb(0,176,240)",
-          fillOpacity: 0.3,
+          fillOpacity: 0.05,
         });
       }
     },
@@ -153,7 +153,7 @@ export default {
   background-color: var(--wit);
 }
 path {
-  stroke-width: 1px;
+  stroke-width: 2px;
   outline:0;
   stroke:var(--wit);
 }
