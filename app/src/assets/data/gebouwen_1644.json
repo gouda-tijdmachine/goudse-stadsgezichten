@@ -2,7 +2,7 @@
 	"Mallegatsluis met brug": {     
         "geometry":{
             "type":"Point",
-            "coordinates":[4.7093,52.0066]
+            "coordinates":[4.7112244834725345,52.00638449102445]
         },
         "bounds": [[-100.549992,10.775],[-75.381478,62.599998]],
         "style": {
@@ -20,7 +20,7 @@
   "Molens langs de Turfsingel, waarschijnlijk De Roode Leeuw en de Korenblom": {
         "geometry":{
             "type":"Point",
-            "coordinates":[4.7070,52.0082]
+            "coordinates":[4.708015810197111,52.00753635623471]
         },
         "bounds": [[-83.435992,53.05],[-62.150002,82.324996]],
         "style": {
@@ -38,7 +38,7 @@
    "Dijkspoort of Rotterdamse Poort": {
         "geometry":{
             "type":"Point",
-            "coordinates":[4.7110,52.0067]
+            "coordinates":[4.711979004518412,52.0067907410411]
         },
         "bounds": [[-87.350002,131.074996],[-59.333808,147.524994]],
        "style": {
@@ -56,7 +56,7 @@
     "Veerstal": {
         "geometry":{
             "type":"Point",
-            "coordinates":[4.7119, 52.0066]
+            "coordinates":[4.712473992725791,52.00661651089209]
         },
         "bounds": [[-105.100006,99.574996],[-88.850344,172.649998]],
        "style": {
@@ -74,7 +74,7 @@
     "Kleine Volmolen": {
         "geometry":{
             "type":"Point",
-            "coordinates":[4.7131, 52.0067]
+            "coordinates":[4.712400111332812,52.00676762588364]
         },
         "bounds":[[-88.225002,159.25],[-69.75,174.525002]],
        "style": {
@@ -92,7 +92,7 @@
     "Veerstalpoort of Waterpoort": {
         "geometry":{
             "type":"Point",
-            "coordinates":[4.715, 52.007]
+            "coordinates":[4.712601277008503,52.00688320155166]
         },
         "bounds": [[-88.550174,175.074996],[-53.930782,186.97499]],
         "style": {
@@ -110,7 +110,7 @@
     "Veerstalstoep": {
         "geometry":{
             "type":"Point",
-            "coordinates":[4.715, 52.007]
+            "coordinates":[4.712794396058712,52.006619028157786]
         },
         "bounds": [[-106.900002,173.224998],[-89.400002,185.800004]],
         "style": {
@@ -128,7 +128,7 @@
     "'t Hoofd": {
         "geometry":{
             "type":"Point",
-            "coordinates":[4.715, 52.007]
+            "coordinates":[4.713049205916832,52.00680394969612]
         },
         "bounds": [[-107.462006,186.97499],[-94.85494,277.774986]],
         "style": {
@@ -146,7 +146,7 @@
     "Pieter Hugesztoren": {
         "geometry":{
             "type":"Point",
-            "coordinates":[4.715, 52.007]
+            "coordinates":[4.713087584974261,52.0070000000006]
         },
         "bounds": [[-85.749842,215.674988],[-57.534036,223.374992]],
        "style": {
@@ -164,7 +164,7 @@
     "Toren van de Sint-Janskerk": {
         "geometry":{
             "type":"Point",
-            "coordinates":[4.715, 52.007]
+            "coordinates":[4.710876678765061,52.01113016096684]
         },
         "bounds": [[-65.738632,225.674988],[-44.175,235.125]],
         "style": {
@@ -182,7 +182,7 @@
     "Tol(huis)poort": {
         "geometry":{
             "type":"Point",
-            "coordinates":[4.715, 52.007]
+            "coordinates":[4.713422861098707,52.00708585579363]
         },
         "bounds": [[-86.949996,240.474998],[-61.536278,251]],
         "style": {
@@ -200,7 +200,7 @@
     "Tolhuis": {
         "geometry":{
             "type":"Point",
-            "coordinates":[4.715, 52.007]
+            "coordinates":[4.713620867862545,52.00711867855097]
         },
         "bounds": [[-74.543564,250.474998],[-59.375,265.375]],
        "style": {
@@ -218,7 +218,7 @@
     "Sluiswachterswoning of Huisje van Jan Simpel": {
         "geometry":{
             "type":"Point",
-            "coordinates":[4.715, 52.007]
+            "coordinates":[4.7135864758500645,52.007042927917354]
         },
         "bounds": [[-89.274998,258.07499],[-70.675,271.475002]],
        "style": {
@@ -236,7 +236,7 @@
     "Haveningang met drijvende balk": {
         "geometry":{
             "type":"Point",
-            "coordinates":[4.715, 52.007]
+            "coordinates":[4.713763150999341,52.006972540793384]
         },
         "bounds": [[-107.662114,278.474998],[-89.952196,292.474998]],
        "style": {
@@ -254,7 +254,7 @@
     "Nieuwe Veerstal": {
         "geometry":{
             "type":"Point",
-            "coordinates":[4.715, 52.007]
+            "coordinates":[4.714527580568472,52.007045188058754]
         },
         "bounds": [[-101.25505,293.125],[-89.725002,361.65001]],
        "style": {
@@ -272,7 +272,7 @@
     "Kleine IJsseltoren of Haventoren van het vm. kasteel, nu Zakkendragershuisje": {
         "geometry":{
             "type":"Point",
-            "coordinates":[4.715, 52.007]
+            "coordinates":[4.713885489201516,52.00711620444517]
         },
         "bounds": [[-89.748606,272.074994],[-59.931904,286.574996]],
        "style": {
@@ -290,7 +290,7 @@
     "Nieuwe Veerstalpoort": {
         "geometry":{
             "type":"Point",
-            "coordinates":[4.715, 52.007]
+            "coordinates":[4.71402764627922,52.0071029958805]
         },
         "bounds": [[-88.047652,286.674996],[-67.836334,294.674996]],
         "style": {
@@ -308,7 +308,7 @@
     "Kruittoren of Kapeltoren van het vm. kasteel, nu Chartertoren": {
         "geometry":{
             "type":"Point",
-            "coordinates":[4.715, 52.007]
+            "coordinates":[4.714395108918296,52.00749925110074]
         },
         "bounds": [[-74.139862,310.674996],[-57.475,323.125]],
         "style": {
@@ -326,7 +326,7 @@
     "Molen ‘t Slot": {
         "geometry":{
             "type":"Point",
-            "coordinates":[4.715, 52.007]
+            "coordinates":[4.715132716397022,52.00747283419511]
         },
         "bounds": [[-75.640702,336.025002],[-55.175,351.074996]],
        "style": {
@@ -344,7 +344,7 @@
     "Bolwerk De Punt": {
         "geometry":{
             "type":"Point",
-            "coordinates":[4.715, 52.007]
+            "coordinates":[4.7152946923456796,52.0071277416242]
         },
         "bounds": [[-88.849998,352.5],[-74.640142,401.774994]],
         "style": {
@@ -362,7 +362,7 @@
     "Crabbelenbrug": {
         "geometry":{
             "type":"Point",
-            "coordinates":[4.715, 52.007]
+            "coordinates":[4.715324196646236,52.0070451880581]
         },
         "bounds": [[-101.655276,362.375],[-89.724998,400.875]],
         "style": {

@@ -3,7 +3,7 @@
     <MglMap
       :mapStyle="mapStyle"
       :center="center"
-      :zoom="16"
+      :zoom="17"
       :maxZoom="18"
       :minZoom="13"
       :maxBounds="maxBounds"

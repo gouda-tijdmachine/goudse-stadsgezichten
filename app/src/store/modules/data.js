@@ -1,8 +1,8 @@
 import gebouwen41 from '../../assets/data/gebouwen_1641.json';
 import gebouwen44 from '../../assets/data/gebouwen_1644.json';
 
-import kaart1649 from "../../assets/data/kaart_blaeu_1649.json";
-import kaart1648 from "../../assets/data/kaart_hollandiae_oppidum_gouda_1612_1648.json";
+import kaart1648 from "../../assets/data/kaart_blaeu_1649.json";
+import kaart1649 from "../../assets/data/kaart_hollandiae_oppidum_gouda_1612_1648.json";
 
 let datas = {
   "stadsgezicht1641": gebouwen41,
@@ -13,7 +13,7 @@ let styles = {
   "stadsgezicht1644": kaart1648
 }
 let panoramas = {
-  "stadsgezicht1641": "https://iiif2.hualab.nl/iiif/2/saftleven-panorama-1669.jpg/info.json",
+  "stadsgezicht1641": "https://www.goudatijdmachine.nl/data/iiif/2/93732/info.json",
   "stadsgezicht1644": "https://www.goudatijdmachine.nl/data/iiif/2/93730/info.json"
 }
 export default {
