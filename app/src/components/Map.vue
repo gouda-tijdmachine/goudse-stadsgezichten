@@ -7,14 +7,12 @@
       :maxZoom="18"
       :minZoom="13"
       :maxBounds="maxBounds"
-      :pitchWithRotate="false"
       :dragRotate="false"
       :attributionControl="false"
       @load="onLoad"
       @styledata="onStyleChange"
       @click="onMapClick"
       @mousemove="onMapMoveMouse"
-      :pitch="0"
     >
       <MglAttributionControl position="bottom-left" :compact="false" />
       <MglFullscreenControl position="top-right" />
@@ -37,7 +35,6 @@
 
 <script>
 import Mapbox from "mapbox-gl";
-import PitchToggle from "./../pitchtogglecontrol";
 import {
   MglMap,
   MglAttributionControl,
@@ -193,8 +190,7 @@ export default {
           ],
           "circle-opacity": 1,
           "circle-stroke-color": "rgb(218, 203, 178)",
-          "circle-stroke-width": 2,
-          "circle-pitch-alignment": "map",
+          "circle-stroke-width": 2
         },
       };
     },
@@ -253,19 +249,6 @@ export default {
 
 .mapboxgl-ctrl button.mapboxgl-ctrl-compass .mapboxgl-ctrl-icon {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='29' height='29' viewBox='0 0 29 29' xmlns='http://www.w3.org/2000/svg' fill='%2330988A'%3E%3Cpath d='M10.5 14l4-8 4 8h-8z'/%3E%3Cpath d='M10.5 16l4 8 4-8h-8z' fill='%23fff'/%3E%3C/svg%3E") !important;
-}
-
-.mapboxgl-ctrl-pitchtoggle-3d {
-  display: none !important;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCI+DQo8dGV4dCB4PSI1MCUiIHk9IjUwJSIgZHk9Ii4zNWVtIiBmaWxsPSIjZmZmIiBzdHlsZT0iZm9udC1zaXplOiAxNHB4OyBmb250LWZhbWlseTogJ0hlbHZldGljYSBOZXVlJyxBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjsgZm9udC13ZWlnaHQ6IGJvbGQ7IHRleHQtYW5jaG9yOiBtaWRkbGU7Ij4zRDwvdGV4dD4NCjwvc3ZnPg==");
-}
-.mapboxgl-ctrl-pitchtoggle-2d {
-  display: none !important;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCI+DQo8dGV4dCB4PSI1MCUiIHk9IjUwJSIgZHk9Ii4zNWVtIiBmaWxsPSIjZmZmIiBzdHlsZT0iZm9udC1zaXplOiAxNHB4OyBmb250LWZhbWlseTogJ0hlbHZldGljYSBOZXVlJyxBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjsgZm9udC13ZWlnaHQ6IGJvbGQ7IHRleHQtYW5jaG9yOiBtaWRkbGU7Ij4yRDwvdGV4dD4NCjwvc3ZnPg==");
 }
 
 .mapboxgl-popup-content {
