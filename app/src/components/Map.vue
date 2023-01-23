@@ -1,7 +1,7 @@
 <template>
   <div class="Map">
     <MglMap
-      :mapStyle="mapStyle"
+      :mapStyle="kaart"
       :center="center"
       :zoom="17"
       :maxZoom="18"
@@ -80,7 +80,7 @@ export default {
       this.map.touchZoomRotate.disableRotation();
       this.map.touchPitch = false;
       this.geojson.features.forEach((item) => {
-        if (item.properties.label === this.gekozenGebouw.properties.label) {
+        if (item.properties.name === this.gekozenGebouw.properties.name) {
           event.map.flyTo({ center: item.geometry.coordinates });
         }
       });
@@ -110,8 +110,8 @@ export default {
 	   if (layercontent && layercontent[0] && layercontent[0].layer) {
         let geb = layercontent[0].properties;
 
-        this.$store.commit("data/setGekozenGebouwId", geb.label);
-        this.$store.commit("data/setGekozenGebouw", geb.label);
+        this.$store.commit("data/setGekozenGebouwId", geb.name);
+        this.$store.commit("data/setGekozenGebouw", geb.name);
       }
     },
     onMapMoveMouse(event) {
@@ -133,8 +133,8 @@ export default {
     },
   },
   computed: {
-    mapStyle() {
-      return this.$store.getters["data/getMapStyle"];
+    kaart() {
+      return this.$store.getters["data/getKaart"];
     },
     gekozenGebouwId() {
       return this.$store.getters["data/getGekozenGebouwId"];
@@ -143,7 +143,7 @@ export default {
       return this.$store.getters["data/getGekozenGebouw"];
     },
     geojson() {
-      let json = this.$store.getters["data/getDataSet"];
+      let json = this.$store.getters["data/getGebouwen"];
       // Create valid geojson from json file
       let geojson = {
         type: "FeatureCollection",
@@ -178,18 +178,23 @@ export default {
             ["zoom"],
             12,
 
-            ["case", ["==", ["get", "label"], this.gekozenGebouwId], 30, 17],
+            ["case", ["==", ["get", "name"], this.gekozenGebouwId], 30, 17],
             20,
-            ["case", ["==", ["get", "label"], this.gekozenGebouwId], 35, 15],
+            ["case", ["==", ["get", "name"], this.gekozenGebouwId], 35, 15],
           ],
           "circle-color": [
             "case",
-            ["==", ["get", "label"], this.gekozenGebouwId],
-            "rgba(255,0,0,0.1)",
-            "rgba(0,176,240,0.1)", 
+            ["==", ["get", "name"], this.gekozenGebouwId],
+            "rgba(255,0,0,0.2)",
+            "rgba(0,176,240,0.2)", 
           ],
           "circle-opacity": 1,
-          "circle-stroke-color": "rgb(218, 203, 178)",
+          "circle-stroke-color": [
+            "case",
+            ["==", ["get", "name"], this.gekozenGebouwId],
+            "rgb(255,0,0)",
+            "rgb(218, 203, 178)"
+          ],
           "circle-stroke-width": 2
         },
       };
@@ -198,7 +203,7 @@ export default {
   watch: {
     gekozenGebouwId() {
       this.geojson.features.forEach((item) => {
-        if (item.properties.label === this.gekozenGebouwId) {
+        if (item.properties.name === this.gekozenGebouwId) {
           this.map.flyTo({ center: item.geometry.coordinates, curve: 1 });
         }
       });

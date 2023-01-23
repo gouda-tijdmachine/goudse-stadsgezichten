@@ -28,7 +28,7 @@ export default {
     this.$store.commit("data/setGekozenGebouwId", "");
     this.$store.commit("data/setGekozenGebouw", {});
     this.$store.commit("data/setPanorama", "https://www.goudatijdmachine.nl/data/iiif/2/93730/info.json");
-    this.$store.commit("data/setDataset", gebouwen_1644);
+    this.$store.commit("data/setGebouwen", gebouwen_1644);
   },  
   watch: {
     gekozenGebouwId() {

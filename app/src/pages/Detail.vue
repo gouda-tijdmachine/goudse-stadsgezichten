@@ -1,9 +1,8 @@
 <template>
   <div class="Detail">
     <Header></Header>
-    <div class="Afb" v-bind:style="{backgroundImage: 'url(' + gekozenGebouw.properties.image+')'}"></div>
     <div class="info">
-      <h1>{{gekozenGebouwId}}</h1>
+      <h1><a target="gtm" href="{{gekozenGebouw.properties.pid}}">{{gekozenGebouwId}}</a></h1>
       <p>
         <span v-html="wiki.extract"></span>
       </p>
@@ -11,14 +10,8 @@
         class="button"
         id="wiki"
         type="button"
-        onclick="location.href='https://nl.wikipedia.org/wiki/Het_Utrechts_Archief'"
-      >Vul dit verhaal aan op Wikipedia</button>
-      <button
-        class="button"
-        id="archief"
-        type="button"
-        onclick="location.href='https://nl.wikipedia.org/wiki/Het_Utrechts_Archief'"
-      >Meer in het Utrechts Archief</button>
+        onclick="location.href='{{gekozenGebouw.properties.pid}}'"
+      >Meer in de Gouda Tijdmachine</button>
     </div>
   </div>
 </template>
@@ -93,7 +86,5 @@ span {
 #wiki {
   background-color: var(--blauw);
 }
-#archief {
-  background-color: var(--blauw);
-}
+
 </style>

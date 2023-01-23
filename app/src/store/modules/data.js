@@ -4,11 +4,11 @@ import gebouwen44 from '../../assets/data/gebouwen_1644.json';
 import kaart1648 from "../../assets/data/kaart_blaeu_1649.json";
 import kaart1649 from "../../assets/data/kaart_hollandiae_oppidum_gouda_1612_1648.json";
 
-let datas = {
+let gebouwen = {
   "stadsgezicht1641": gebouwen41,
   "stadsgezicht1644": gebouwen44
 }
-let styles = {
+let kaarten = {
   "stadsgezicht1641": kaart1649,
   "stadsgezicht1644": kaart1648
 }
@@ -19,9 +19,9 @@ let panoramas = {
 export default {
   namespaced: true,
   state: {
-    data: datas["stadsgezicht1644"],
+    data: gebouwen["stadsgezicht1644"],
     panorama:  panoramas["stadsgezicht1644"],
-    mapStyle: styles["stadsgezicht1644"],
+    mapStyle: kaarten["stadsgezicht1644"],
     gekozenGebouwId: "",
     gekozenGebouw: {
       properties: ""
@@ -47,24 +47,24 @@ export default {
       state.imageList = list
     }
     ,
-    setMapStyle(state, mapStyle) {
+    setKaart(state, mapStyle) {
       state.mapStyle = mapStyle
     },
     setPanorama(state,panorama){
       state.panorama = panorama
     },
-    setDataset(state,data){
+    setGebouwen(state,data){
       state.data = data
     }
   },
   getters: {
-    getDataSet : state => {
+    getGebouwen : state => {
       return state.data
     },
     getPanormaUrl: state =>{
       return state.panorama
     },
-    getMapStyle: state => {
+    getKaart: state => {
       return state.mapStyle
     },
     getGekozenGebouwId: state => {
@@ -82,15 +82,15 @@ export default {
   },
   actions: {
     toggleMapStyle({ state, commit }) {
-      if (state.mapStyle === styles["stadsgezicht1641"]) {
-        commit("setMapStyle", styles["stadsgezicht1644"])
+      if (state.mapStyle === kaarten["stadsgezicht1641"]) {
+        commit("setKaart", kaarten["stadsgezicht1644"])
         commit("setPanorama", panoramas["stadsgezicht1644"])
-        commit("setDataset", datas["stadsgezicht1644"])
+        commit("setGebouwen", gebouwen["stadsgezicht1644"])
 
-      } else if (state.mapStyle === styles["stadsgezicht1644"]) {
-        commit("setMapStyle", styles["stadsgezicht1641"])
+      } else if (state.mapStyle === kaarten["stadsgezicht1644"]) {
+        commit("setKaart", kaarten["stadsgezicht1641"])
         commit("setPanorama", panoramas["stadsgezicht1641"])
-        commit("setDataset", datas["stadsgezicht1641"])
+        commit("setGebouwen", gebouwen["stadsgezicht1641"])
 
       }
     },

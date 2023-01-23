@@ -23,12 +23,11 @@
         v-bind:fillOpacity=" name === gekozenGebouwId ?  0.1  : 0.05 "
         :stroke="gebouw.style.stroke"
         :key="name"
-        @click="handleClick(name)"
+        @click="handleClick(gebouw.properties.name)"
         @mouseover="mouseover"
         @mouseout="mouseout"
-        :className="gebouw.properties.label"
       >
-        <l-tooltip :content="name" :options="{sticky: true}" />
+        <l-tooltip :content="gebouw.properties.label" :options="{sticky: true}" />
       </l-rectangle>
     </LMap>
   </div>
@@ -74,7 +73,7 @@ export default {
   created() {},
   computed: {
     gebouwen() {
-      return this.$store.getters["data/getDataSet"];
+      return this.$store.getters["data/getGebouwen"];
     },
     iiifUrl() {
       return this.$store.getters["data/getPanormaUrl"];
@@ -213,7 +212,7 @@ path.leaflet-interactive:nth-child(16) {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-*/
+
 @keyframes blinkingBorder {
   0% {
     stroke: var(--wit);
@@ -237,11 +236,18 @@ path.leaflet-interactive:nth-child(16) {
     stroke: var(--wit);
   }
 }
+*/
 .leaflet-tooltip {
   font-family: 'Source Sans Pro', sans-serif !important;
   background: var(--lichtgrijs);
   padding:10x 30px;
   font-size:1.4em;
 }
+.leaflet-tooltip-left:before {
+  border-left-color:var(--lichtgrijs);
+}
+.leaflet-tooltip-left {
 
+}
+/* ,.leaflet-tooltip-right:before */
 </style>
