@@ -34,7 +34,7 @@ export default {
 .Colofon {
   height: 100vh;
   display: grid;
-  grid-template-rows: 56px repeat(2, 8px);
+  grid-template-rows: 44px repeat(2, 8px);
   overflow-x: hidden;
 }
 .Header {

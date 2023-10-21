@@ -66,7 +66,7 @@ export default {
   width: 100vw;
   display: grid;
   grid-template-columns: 320px repeat(2, 1fr);
-  grid-template-rows: 56px repeat(2, 8px) 1fr repeat(2, 8px) 1fr repeat(2, 8px) 1fr;
+  grid-template-rows: 44px repeat(2, 8px) 1fr repeat(2, 8px) 1fr repeat(2, 8px) 1fr;
 }
 
 #gekleurdeBalk1 {

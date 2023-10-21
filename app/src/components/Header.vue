@@ -56,16 +56,16 @@ export default {
 
 h1 {
   margin-left:10px;
-  font-size:2.5em;
+  font-size:2.4em;
 }
 
 h1 img {
   float:left;
   z-index:10;
   position:absolute;
-  left:5px;
-  width:45px;
-  height:45px;
+  left:15px;
+  width:32px;
+  height:32px;
   margin-top:9px;
 }
 
@@ -92,7 +92,7 @@ h1 img {
 
 .button {
   background-color:transparent;
-  height: 63px;
+  height: 50px;
   margin:0;
 }
 .button:hover {
@@ -128,7 +128,6 @@ input {
   background-color: var(--bruin);
   align-items: center;
   height: 50px;
-  margin-top:7px;
 }
 
 .toggle-text {
