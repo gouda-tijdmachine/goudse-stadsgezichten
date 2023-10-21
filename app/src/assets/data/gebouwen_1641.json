@@ -1,307 +1,512 @@
 {
-    "Potterspoort": {     
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.703493207446996,52.01171699543636]
-        },
-        "bounds": [[-147.5,9.25],[-119.75,30]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.2
-        },
-        "properties":{
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"Potterspoort",
-            "description":"TODO"
-        }
+    "1641-1": {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.703493207446996,
+          52.01171699543636
+        ]
+      },
+      "bounds": [
+        [
+          -147.5,
+          9.25
+        ],
+        [
+          -119.75,
+          30
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.2
+      },
+      "properties": {
+        "name": "1641-1",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Potterspoort",
+        "description": "TODO"
+      }
     },
-
-    "2 onbekende molen": {     
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.703906845149362,52.00940740330799]
-        },
-        "bounds": [[-151,63.75],[-119.25,85.5]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.2
-        },
-        "properties":{
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"2 onbekende molen",
-            "description":"TODO"
-        }
+    "1641-2": {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.703906845149362,
+          52.00940740330799
+        ]
+      },
+      "bounds": [
+        [
+          -151,
+          63.75
+        ],
+        [
+          -119.25,
+          85.5
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.2
+      },
+      "properties": {
+        "name": "1641-2",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Molen De Korenblom",
+        "description": "TODO"
+      }
     },
-
-    "3 onbekende molen": {     
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.703265374998978,52.0097376267978]
-        },
-        "bounds": [[-143,96.25],[-124,107]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.2
-        },
-        "properties":{
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"3 onbekende molen",
-            "description":"TODO"
-        }
+    "1641-3": {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.703265374998978,
+          52.0097376267978
+        ]
+      },
+      "bounds": [
+        [
+          -143,
+          96.25
+        ],
+        [
+          -124,
+          107
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.2
+      },
+      "properties": {
+        "name": "1641-3",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Molen De Noord",
+        "description": "TODO"
+      }
     },
-
-    "4 Sint-Joostkapel": {     
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.707169746207427,52.010472316603625]
-        },
-        "bounds": [[-148,105],[-110,112.75]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.2
-        },
-        "properties":{
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"4 Sint-Joostkapel",
-            "description":"TODO"
-        }
+    "1641-4": {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.707169746207427,
+          52.010472316603625
+        ]
+      },
+      "bounds": [
+        [
+          -148,
+          105
+        ],
+        [
+          -110,
+          112.75
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.2
+      },
+      "properties": {
+        "name": "1641-4",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Sint-Joostkapel",
+        "description": "TODO"
+      }
     },
-
-    "5 Onze-Lieve-Vrouwekerk": {     
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.708512152050986,52.013248798606554]
-        },
-        "bounds": [[-145.25,114],[-120.75,123]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.2
-        },
-        "properties":{
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"5 Onze-Lieve-Vrouwekerk",
-            "description":"TODO"
-        }
+    "1641-5": {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.708512152050986,
+          52.013248798606554
+        ]
+      },
+      "bounds": [
+        [
+          -145.25,
+          114
+        ],
+        [
+          -120.75,
+          123
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.2
+      },
+      "properties": {
+        "name": "1641-5",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Onze-Lieve-Vrouwekerk",
+        "description": "TODO"
+      }
     },
-
-    "6 onbekende molen": {     
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.703265374998978,52.0097376267978]
-        },
-        "bounds": [[-147,139.5],[-113.5,154.75]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.2
-        },
-        "properties":{
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"6 onbekende molen",
-            "description":"TODO"
-        }
+    "1641-6": {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.703265374998978,
+          52.0097376267978
+        ]
+      },
+      "bounds": [
+        [
+          -147,
+          139.5
+        ],
+        [
+          -113.5,
+          154.75
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.2
+      },
+      "properties": {
+        "name": "1641-6",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Molen De Roode Leeuw",
+        "description": "TODO"
+      }
     },
-
-    "7 Barbaratoren": {     
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.710311683445298,52.00824191459944]
-        },
-        "bounds": [[-141,159.5],[-99.5,171.25]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.2
-        },
-        "properties":{
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"7 Barbaratoren",
-            "description":"TODO"
-        }
+    "1641-7": {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.710311683445298,
+          52.00824191459944
+        ]
+      },
+      "bounds": [
+        [
+          -141,
+          159.5
+        ],
+        [
+          -99.5,
+          171.25
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.2
+      },
+      "properties": {
+        "name": "1641-7",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Barbaratoren",
+        "description": "TODO"
+      }
     },
-
-    "8 Dijkspoort of Rotterdamse Poort": {     
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.7118406238789134,52.00678714761443]
-        },
-        "bounds": [[-140.25,196],[-118.5,212]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.2
-        },
-        "properties":{
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"8 Dijkspoort of Rotterdamse Poort",
-            "description":"TODO"
-        }
+    "1641-8": {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7118406238789134,
+          52.00678714761443
+        ]
+      },
+      "bounds": [
+        [
+          -140.25,
+          196
+        ],
+        [
+          -118.5,
+          212
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.2
+      },
+      "properties": {
+        "name": "1641-8",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Dijkspoort of Rotterdamse Poort",
+        "description": "TODO"
+      }
     },
-
-    "9 stadhuis": {     
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.710509617702684,52.01189769318057]
-        },
-        "bounds": [[-133.75,208],[-101.5,221]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.2
-        },
-        "properties":{
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"9 stadhuis",
-            "description":"TODO"
-        }
+    "1641-9": {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.710509617702684,
+          52.01189769318057
+        ]
+      },
+      "bounds": [
+        [
+          -133.75,
+          208
+        ],
+        [
+          -101.5,
+          221
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.2
+      },
+      "properties": {
+        "name": "1641-9",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Stadhuis",
+        "description": "TODO"
+      }
     },
-
-    "10 onbekende molen": {     
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.706214735705032,52.00797374823438]
-        },
-        "bounds": [[-144,234.5],[-113,249.75]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.2
-        },
-        "properties":{
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"10 onbekende molen",
-            "description":"TODO"
-        }
+    "1641-10": {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.706214735705032,
+          52.00797374823438
+        ]
+      },
+      "bounds": [
+        [
+          -144,
+          234.5
+        ],
+        [
+          -113,
+          249.75
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.2
+      },
+      "properties": {
+        "name": "1641-10",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Onbekende molen, wellicht in Het Buurtje",
+        "description": "TODO"
+      }
     },
-
-    "11 Sint-Janskerk": {     
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.710841198966364,52.011053108345806]
-        },
-        "bounds": [[-134,249.25],[-94,297.75]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.2
-        },
-        "properties":{
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"11 Sint-Janskerk",
-            "description":"TODO"
-        }
+    "1641-11": {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.710841198966364,
+          52.011053108345806
+        ]
+      },
+      "bounds": [
+        [
+          -134,
+          249.25
+        ],
+        [
+          -94,
+          297.75
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.2
+      },
+      "properties": {
+        "name": "1641-11",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Sint-Janskerk",
+        "description": "TODO"
+      }
     },
-
-    "12 Catharina Gasthuis": {     
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.711915180047924,52.01025119772453]
-        },
-        "bounds": [[-142.75,290.5],[-123.25,316.5]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.2
-        },
-        "properties":{
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"12 Catharina Gasthuis",
-            "description":"TODO"
-        }
+    "1641-12": {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.711915180047924,
+          52.01025119772453
+        ]
+      },
+      "bounds": [
+        [
+          -142.75,
+          290.5
+        ],
+        [
+          -123.25,
+          316.5
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.2
+      },
+      "properties": {
+        "name": "1641-12",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Catharina Gasthuis",
+        "description": "TODO"
+      }
     },
-
-    "13 onbekende spitsen": {     
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.703265374998978,52.0097376267978]
-        },
-        "bounds": [[-126,304.5],[-109.25,320.75]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.2
-        },
-        "properties":{
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"13 onbekende spitsen",
-            "description":"TODO"
-        }
+    "1641-13": {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.703265374998978,
+          52.0097376267978
+        ]
+      },
+      "bounds": [
+        [
+          -126,
+          304.5
+        ],
+        [
+          -109.25,
+          320.75
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.2
+      },
+      "properties": {
+        "name": "1641-13",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Tiendewegspoort",
+        "description": "TODO"
+      }
     },
-
-    "14 onbekende molen": {     
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.703265374998978,52.0097376267978]
-        },
-        "bounds": [[-143.25,318],[-112,337.5]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.2
-        },
-        "properties":{
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"14 onbekende molen",
-            "description":"TODO"
-        }
+    "1641-14": {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.703265374998978,
+          52.0097376267978
+        ]
+      },
+      "bounds": [
+        [
+          -143.25,
+          318
+        ],
+        [
+          -112,
+          337.5
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.2
+      },
+      "properties": {
+        "name": "1641-14",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Onbekende molen",
+        "description": "TODO"
+      }
     },
-
-    "15 onbekende spits": {     
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.703265374998978,52.0097376267978]
-        },
-        "bounds": [[-142.5,377.25],[-107.75,388.75]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.2
-        },
-        "properties":{
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"15 onbekende spits",
-            "description":"TODO"
-        }
+    "1641-15": {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.703265374998978,
+          52.0097376267978
+        ]
+      },
+      "bounds": [
+        [
+          -142.5,
+          377.25
+        ],
+        [
+          -107.75,
+          388.75
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.2
+      },
+      "properties": {
+        "name": "1641-15",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Onbekende spits",
+        "description": "TODO"
+      }
     },
-
-    "16 Chartertoren": {     
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.714338160891742,52.00749161298509]
-        },
-        "bounds": [[-148.25,423],[-116.5,452]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.2
-        },
-        "properties":{
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"16 Chartertoren",
-            "description":"TODO"
-        }
+    "1641-16": {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.714338160891742,
+          52.00749161298509
+        ]
+      },
+      "bounds": [
+        [
+          -148.25,
+          423
+        ],
+        [
+          -116.5,
+          452
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.2
+      },
+      "properties": {
+        "name": "1641-16",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Chartertoren",
+        "description": "TODO"
+      }
     },
-
-    "17 molen 's slot": {     
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.715102383813871,52.00746674968974]
-        },
-        "bounds": [[-149,465.25],[-116.25,479.25]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.2
-        },
-        "properties":{
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"17 molen 's slot",
-            "description":"TODO"
-        }
+    "1641-17": {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.715102383813871,
+          52.00746674968974
+        ]
+      },
+      "bounds": [
+        [
+          -149,
+          465.25
+        ],
+        [
+          -116.25,
+          479.25
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.2
+      },
+      "properties": {
+        "name": "1641-17",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Molen 't Slot",
+        "description": "TODO"
+      }
     }
-}
+  }

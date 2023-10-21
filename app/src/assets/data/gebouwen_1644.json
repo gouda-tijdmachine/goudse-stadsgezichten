@@ -1,400 +1,632 @@
 {
-	"1644-1": {     
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.711222757730184,52.006316794686796]
-        },
-        "bounds": [[-100.549992,10.775],[-75.381478,62.599998]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.1
-        },
-        "properties":{
-            "name":"1644-1",
-            "pid":"https://n2t.net/ark:/60537/bhuRsh",
-            "label":"Mallegatsluis",
-            "description":"De Mallegatsluis verbindt de Hollandsche IJssel in het zuiden, met de Gouwe in het noorden via de Turfsingel, een van de singels die rondom de stad liggen. Waar de tegenwoordige sluis ligt, lag al in 1398 een schutsluis, maar die mocht niet, of alleen met speciale toestemming van het stadsbestuur, worden gebruikt. Het was nl. de bedoeling dat de schippers door de Havensluis of ook wel IJsselhavensluis genaamd, een honderd meter naar het oosten gelegen, de stad door voeren."
-        }
+    "1644-1": {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.711222757730184,
+          52.006316794686796
+        ]
+      },
+      "bounds": [
+        [
+          -100.549992,
+          10.775
+        ],
+        [
+          -75.381478,
+          62.599998
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.1
+      },
+      "properties": {
+        "name": "1644-1",
+        "pid": "https://n2t.net/ark:/60537/bhuRsh",
+        "label": "Mallegatsluis",
+        "description": "De Mallegatsluis verbindt de Hollandsche IJssel in het zuiden, met de Gouwe in het noorden via de Turfsingel, een van de singels die rondom de stad liggen. Waar de tegenwoordige sluis ligt, lag al in 1398 een schutsluis, maar die mocht niet, of alleen met speciale toestemming van het stadsbestuur, worden gebruikt. Het was nl. de bedoeling dat de schippers door de Havensluis of ook wel IJsselhavensluis genaamd, een honderd meter naar het oosten gelegen, de stad door voeren."
+      }
     },
-
-  "1644-2": {
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.708015810197111,52.00753635623471]
-        },
-        "bounds": [[-83.435992,53.05],[-62.150002,82.324996]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.1
-        },
-        "properties":{
-            "name":"1644-2",
-            "pid":"https://n2t.net/ark:/60537/bJYekL",
-            "label":"Molens langs de Turfsingel, waarschijnlijk De Roode Leeuw en de Korenblom",
-            "description":"TODO"
-        }
+    "1644-2": {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.708015810197111,
+          52.00753635623471
+        ]
+      },
+      "bounds": [
+        [
+          -83.435992,
+          53.05
+        ],
+        [
+          -62.150002,
+          82.324996
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.1
+      },
+      "properties": {
+        "name": "1644-2",
+        "pid": "https://n2t.net/ark:/60537/bJYekL",
+        "label": "Molens langs de Turfsingel, waarschijnlijk De Roode Leeuw en de Korenblom",
+        "description": "TODO"
+      }
     },
-	
     "1644-3": {
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.711979004518412,52.0067907410411]
-        },
-        "bounds": [[-87.350002,131.074996],[-59.333808,147.524994]],
-       "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.1
-        },
-        "properties":{
-            "name":"1644-3",
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"Dijkspoort of Rotterdamse Poort",
-            "description":"De Dijkspoort, aldus genoemd naar de binnenkomst in de stad via de IJsseldijk, die binnen de stad zelf doorloopt. Volgens een stevige maar enigszins ouderwetse manier van bouwen, is deze gesticht in 1586 en verfraaid met een torentje erbovenop met een staande klok."
-        }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.711979004518412,
+          52.0067907410411
+        ]
+      },
+      "bounds": [
+        [
+          -87.350002,
+          131.074996
+        ],
+        [
+          -59.333808,
+          147.524994
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.1
+      },
+      "properties": {
+        "name": "1644-3",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Dijkspoort of Rotterdamse Poort",
+        "description": "De Dijkspoort, aldus genoemd naar de binnenkomst in de stad via de IJsseldijk, die binnen de stad zelf doorloopt. Volgens een stevige maar enigszins ouderwetse manier van bouwen, is deze gesticht in 1586 en verfraaid met een torentje erbovenop met een staande klok."
+      }
     },
-
     "1644-4": {
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.712473992725791,52.00661651089209]
-        },
-        "bounds": [[-105.100006,99.574996],[-88.850344,172.649998]],
-       "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.1
-        },
-        "properties":{
-            "name":"1644-4",
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"Veerstal",
-            "description":"TODO"
-        }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.712473992725791,
+          52.00661651089209
+        ]
+      },
+      "bounds": [
+        [
+          -105.100006,
+          99.574996
+        ],
+        [
+          -88.850344,
+          172.649998
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.1
+      },
+      "properties": {
+        "name": "1644-4",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Veerstal",
+        "description": "TODO"
+      }
     },
-
     "1644-5": {
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.712400111332812,52.00676762588364]
-        },
-        "bounds":[[-88.225002,159.25],[-69.75,174.525002]],
-       "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.1
-        },
-        "properties":{
-            "name":"1644-5",
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"Kleine Volmolen",
-            "description":"TODO"
-        }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.712400111332812,
+          52.00676762588364
+        ]
+      },
+      "bounds": [
+        [
+          -88.225002,
+          159.25
+        ],
+        [
+          -69.75,
+          174.525002
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.1
+      },
+      "properties": {
+        "name": "1644-5",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Kleine Volmolen",
+        "description": "TODO"
+      }
     },
-
     "1644-6": {
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.712601277008503,52.00688320155166]
-        },
-        "bounds": [[-88.550174,175.074996],[-53.930782,186.97499]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.1
-        },
-       "properties":{
-            "name":"1644-6",
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"Veerstalpoort of Waterpoort",
-            "description":"TODO"
-        }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.712601277008503,
+          52.00688320155166
+        ]
+      },
+      "bounds": [
+        [
+          -88.550174,
+          175.074996
+        ],
+        [
+          -53.930782,
+          186.97499
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.1
+      },
+      "properties": {
+        "name": "1644-6",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Veerstalpoort of Waterpoort",
+        "description": "TODO"
+      }
     },
-
     "1644-7": {
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.712794396058712,52.006619028157786]
-        },
-        "bounds": [[-106.900002,173.224998],[-89.400002,185.800004]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.1
-        },
-       "properties":{
-            "name":"1644-7",
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"Veerstalstoep",
-            "description":"TODO"
-        }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.712794396058712,
+          52.006619028157786
+        ]
+      },
+      "bounds": [
+        [
+          -106.900002,
+          173.224998
+        ],
+        [
+          -89.400002,
+          185.800004
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.1
+      },
+      "properties": {
+        "name": "1644-7",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Veerstalstoep",
+        "description": "TODO"
+      }
     },
-
     "1644-8": {
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.713049205916832,52.00680394969612]
-        },
-        "bounds": [[-107.462006,186.97499],[-94.85494,277.774986]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.1
-        },
-       "properties":{
-            "name":"1644-8",
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"'t Hoofd",
-            "description":"TODO"
-        }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.713049205916832,
+          52.00680394969612
+        ]
+      },
+      "bounds": [
+        [
+          -107.462006,
+          186.97499
+        ],
+        [
+          -94.85494,
+          277.774986
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.1
+      },
+      "properties": {
+        "name": "1644-8",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "'t Hoofd",
+        "description": "TODO"
+      }
     },
-
     "1644-9": {
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.713087584974261,52.0070000000006]
-        },
-        "bounds": [[-85.749842,215.674988],[-57.534036,223.374992]],
-       "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.1
-        },
-        "properties":{
-            "name":"1644-9",
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"Pieter Hugesztoren",
-            "description":"TODO"
-        }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.713087584974261,
+          52.0070000000006
+        ]
+      },
+      "bounds": [
+        [
+          -85.749842,
+          215.674988
+        ],
+        [
+          -57.534036,
+          223.374992
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.1
+      },
+      "properties": {
+        "name": "1644-9",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Pieter Hugesztoren",
+        "description": "TODO"
+      }
     },
-
     "1644-10": {
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.710876678765061,52.01113016096684]
-        },
-        "bounds": [[-65.738632,225.674988],[-44.175,235.125]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.1
-        },
-       "properties":{
-            "name":"1644-10",
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"Toren van de Sint-Janskerk",
-            "description":"TODO"
-        }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.710876678765061,
+          52.01113016096684
+        ]
+      },
+      "bounds": [
+        [
+          -65.738632,
+          225.674988
+        ],
+        [
+          -44.175,
+          235.125
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.1
+      },
+      "properties": {
+        "name": "1644-10",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Toren van de Sint-Janskerk",
+        "description": "TODO"
+      }
     },
-
     "1644-11": {
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.713422861098707,52.00708585579363]
-        },
-        "bounds": [[-86.949996,240.474998],[-61.536278,251]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.1
-        },
-       "properties":{
-            "name":"1644-11",
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"Tol(huis)poort",
-            "description":"TODO"
-        }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.713422861098707,
+          52.00708585579363
+        ]
+      },
+      "bounds": [
+        [
+          -86.949996,
+          240.474998
+        ],
+        [
+          -61.536278,
+          251
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.1
+      },
+      "properties": {
+        "name": "1644-11",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Tol(huis)poort",
+        "description": "TODO"
+      }
     },
-
     "1644-12": {
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.713620867862545,52.00711867855097]
-        },
-        "bounds": [[-74.543564,250.474998],[-59.375,265.375]],
-       "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.1
-        },
-        "properties":{
-            "name":"1644-12",
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"Tolhuis",
-            "description":"TODO"
-        }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.713620867862545,
+          52.00711867855097
+        ]
+      },
+      "bounds": [
+        [
+          -74.543564,
+          250.474998
+        ],
+        [
+          -59.375,
+          265.375
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.1
+      },
+      "properties": {
+        "name": "1644-12",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Tolhuis",
+        "description": "TODO"
+      }
     },
-
     "1644-13": {
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.7135864758500645,52.007042927917354]
-        },
-        "bounds": [[-89.274998,258.07499],[-70.675,271.475002]],
-       "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.1
-        },
-        "properties":{
-            "name":"1644-13",
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"Sluiswachterswoning of Huisje van Jan Simpel",
-            "description":"TODO"
-        }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7135864758500645,
+          52.007042927917354
+        ]
+      },
+      "bounds": [
+        [
+          -89.274998,
+          258.07499
+        ],
+        [
+          -70.675,
+          271.475002
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.1
+      },
+      "properties": {
+        "name": "1644-13",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Sluiswachterswoning of Huisje van Jan Simpel",
+        "description": "TODO"
+      }
     },
-
     "1644-14": {
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.713763150999341,52.006972540793384]
-        },
-        "bounds": [[-107.662114,278.474998],[-89.952196,292.474998]],
-       "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.1
-        },
-        "properties":{
-            "name":"1644-14",
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"Haveningang met drijvende balk",
-            "description":"TODO"
-        }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.713763150999341,
+          52.006972540793384
+        ]
+      },
+      "bounds": [
+        [
+          -107.662114,
+          278.474998
+        ],
+        [
+          -89.952196,
+          292.474998
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.1
+      },
+      "properties": {
+        "name": "1644-14",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Haveningang met drijvende balk",
+        "description": "TODO"
+      }
     },
-
     "1644-15": {
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.714527580568472,52.007045188058754]
-        },
-        "bounds": [[-101.25505,293.125],[-89.725002,361.65001]],
-       "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.1
-        },
-        "properties":{
-            "name":"1644-15",
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"Nieuwe Veerstal",
-            "description":"TODO"
-        }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.714527580568472,
+          52.007045188058754
+        ]
+      },
+      "bounds": [
+        [
+          -101.25505,
+          293.125
+        ],
+        [
+          -89.725002,
+          361.65001
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.1
+      },
+      "properties": {
+        "name": "1644-15",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Nieuwe Veerstal",
+        "description": "TODO"
+      }
     },
-
     "1644-16": {
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.713885489201516,52.00711620444517]
-        },
-        "bounds": [[-89.748606,272.074994],[-59.931904,286.574996]],
-       "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.1
-        },
-        "properties":{
-            "name":"1644-16",
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"Kleine IJsseltoren of Haventoren van het vm. kasteel, nu Zakkendragershuisje",
-            "description":"TODO"
-        }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.713885489201516,
+          52.00711620444517
+        ]
+      },
+      "bounds": [
+        [
+          -89.748606,
+          272.074994
+        ],
+        [
+          -59.931904,
+          286.574996
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.1
+      },
+      "properties": {
+        "name": "1644-16",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Kleine IJsseltoren of Haventoren van het vm. kasteel, nu Zakkendragershuisje",
+        "description": "TODO"
+      }
     },
-
     "1644-17": {
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.71402764627922,52.0071029958805]
-        },
-        "bounds": [[-88.047652,286.674996],[-67.836334,294.674996]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.1
-        },
-       "properties":{
-            "name":"1644-17",
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"Nieuwe Veerstalpoort",
-            "description":"TODO"
-        }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.71402764627922,
+          52.0071029958805
+        ]
+      },
+      "bounds": [
+        [
+          -88.047652,
+          286.674996
+        ],
+        [
+          -67.836334,
+          294.674996
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.1
+      },
+      "properties": {
+        "name": "1644-17",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Nieuwe Veerstalpoort",
+        "description": "TODO"
+      }
     },
-
     "1644-18": {
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.714395108918296,52.00749925110074]
-        },
-        "bounds": [[-74.139862,310.674996],[-57.475,323.125]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.1
-        },
-       "properties":{
-            "name":"1644-18",
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"Kruittoren of Kapeltoren van het vm. kasteel, nu Chartertoren",
-            "description":"TODO"
-        }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.714395108918296,
+          52.00749925110074
+        ]
+      },
+      "bounds": [
+        [
+          -74.139862,
+          310.674996
+        ],
+        [
+          -57.475,
+          323.125
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.1
+      },
+      "properties": {
+        "name": "1644-18",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Kruittoren of Kapeltoren van het vm. kasteel, nu Chartertoren",
+        "description": "TODO"
+      }
     },
-
     "1644-19": {
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.715132716397022,52.00747283419511]
-        },
-        "bounds": [[-75.640702,336.025002],[-55.175,351.074996]],
-       "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.1
-        },
-        "properties":{
-            "name":"1644-19",
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"Molen ‘t Slot",
-            "description":"TODO"
-        }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.715132716397022,
+          52.00747283419511
+        ]
+      },
+      "bounds": [
+        [
+          -75.640702,
+          336.025002
+        ],
+        [
+          -55.175,
+          351.074996
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.1
+      },
+      "properties": {
+        "name": "1644-19",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Molen ‘t Slot",
+        "description": "TODO"
+      }
     },
-
     "1644-20": {
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.7152946923456796,52.0071277416242]
-        },
-        "bounds": [[-88.849998,352.5],[-74.640142,401.774994]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.1
-        },
-       "properties":{
-            "name":"1644-20",
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"Bolwerk De Punt",
-            "description":"TODO"
-        }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7152946923456796,
+          52.0071277416242
+        ]
+      },
+      "bounds": [
+        [
+          -88.849998,
+          352.5
+        ],
+        [
+          -74.640142,
+          401.774994
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.1
+      },
+      "properties": {
+        "name": "1644-20",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Bolwerk De Punt",
+        "description": "TODO"
+      }
     },
-
     "1644-21": {
-        "geometry":{
-            "type":"Point",
-            "coordinates":[4.715324196646236,52.0070451880581]
-        },
-        "bounds": [[-101.655276,362.375],[-89.724998,400.875]],
-        "style": {
-            "stroke": false,
-            "fillColor": "#00b0f0",
-            "fillOpacity": 0.1
-        },
-		"properties":{
-            "name":"1644-21",
-            "pid":"https://n2t.net/ark:/60537/bSvVz4",
-            "label":"Crabbelenbrug",
-            "description":"TODO"
-        }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.715324196646236,
+          52.0070451880581
+        ]
+      },
+      "bounds": [
+        [
+          -101.655276,
+          362.375
+        ],
+        [
+          -89.724998,
+          400.875
+        ]
+      ],
+      "style": {
+        "stroke": false,
+        "fillColor": "#00b0f0",
+        "fillOpacity": 0.1
+      },
+      "properties": {
+        "name": "1644-21",
+        "pid": "https://n2t.net/ark:/60537/bSvVz4",
+        "label": "Crabbelenbrug",
+        "description": "TODO"
+      }
     }
-}
+  }
