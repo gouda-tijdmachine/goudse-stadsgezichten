@@ -106,7 +106,7 @@ export default {
         layers: ["gebouwen"],
       });
       event.map.flyTo({ center: [e.lngLat.lng, e.lngLat.lat] });
-      console.log("[" + e.lngLat.lng + "," + e.lngLat.lat+"]");
+      //console.log("[" + e.lngLat.lng + "," + e.lngLat.lat+"]");
 	   if (layercontent && layercontent[0] && layercontent[0].layer) {
         let geb = layercontent[0].properties;
 
