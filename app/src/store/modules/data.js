@@ -94,34 +94,17 @@ export default {
 
       }
     },
-     getGekozenGebouwImages({ commit, state }) {
- 
-      let sparqlQuery = `
-        PREFIX o: <http://omeka.org/s/vocabs/o#>
-        PREFIX dcterms: <http://purl.org/dc/terms/>
 
-        SELECT * WHERE {
-            <${state.gekozenGebouw.properties.pid}> o:media ?o .
-            ?o o:original_url ?img .
-            ?o o:id ?catnr .
-            ?o dcterms:title ?description .
-            OPTIONAL { ?o dcterms:date ?date . }
-            OPTIONAL { ?o dcterms:source ?source. }
-        } limit 15
-      `
-
-      fetch("https://www.goudatijdmachine.nl/sparql/repositories/gtm?query=" + encodeURIComponent(sparqlQuery) ,
-        {
-          "headers": { "accept": "application/sparql-results+json" }, "method": "GET"
-        })
+    getGekozenGebouwImages({ commit, state }) {
+      fetch(state.gekozenGebouw.properties.pid,{"headers": { "accept": "application/media+json" }, "method": "GET"})
         .then(response => response.json())
         .then(json => {
-          if (json.results) {
-//            console.log(json);
-            commit('fillImageList', json.results.bindings)
+          if (json) {
+              commit('fillImageList', json)
           }
-        })
+        });
     },
+
     getGekozenGebouwWiki({ commit, state }) {
       commit('GET_WIKI', state.gekozenGebouw.properties.wikipedia)
 

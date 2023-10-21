@@ -39,16 +39,16 @@
         <Slide
           v-for="(item, itemIndex) in images"
           :key="'slide'+itemIndex"
-          :data-index="item.catnr.value"
-          :data-name="item.catnr.value"
-          :src="item.img.value"
+          :data-index="item.id"
+          :data-name="item.id"
+          :src="item.img"
         >
           <img
             class="image"
-            :src="item.img.value"
+            :src="item.img"
             :key="itemIndex"
-            :alt="item.description.value"
-            v-tooltip.top="item.description.value"
+            :alt="item.title"
+            v-tooltip.top="item.title"
             @click="setIndex(itemIndex)"
           />
         </Slide>
@@ -90,8 +90,8 @@ export default {
         let all = this.$store.getters["data/getImages"];
         all.forEach((element) => {
           list.push({
-            src: element.img.value.replace("thumb", "download"),
-            title: element.description.value,
+            src: element.img.replace("original", "large").replace("png", "jpg"),
+            title: element.title,
           });
         });
       }
