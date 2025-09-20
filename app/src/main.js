@@ -1,4 +1,4 @@
-import 'current-script-polyfill'
+import 'current-script-polyfill';
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 import "whatwg-fetch";
@@ -6,18 +6,13 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router.js";
 import store from "./store";
-import Mapbox from "mapbox-gl";
-import VTooltip from "v-tooltip";
+import FloatingVue from 'floating-vue';
+import 'floating-vue/dist/style.css';
 
 window.Vue = Vue;
 Vue.router = router;
 
-Vue.use(
-  VTooltip,
-  {
-    mapboxgl: Mapbox
-  },
-);
+Vue.use(FloatingVue);
 
 new Vue({
   router,
