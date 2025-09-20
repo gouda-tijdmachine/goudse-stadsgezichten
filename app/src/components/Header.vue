@@ -1,7 +1,7 @@
 <template>
   <div class="Header">
     <router-link to="/">
-      <h1><img src="../assets/images/wapengouda.png" 
+      <h1><img hspace="5" src="../assets/images/gtm-logo-2025-b.png" 
         alt="Gouda Tijdmachine">Goudse stadsgezichten</h1>
     </router-link>
     <button
@@ -55,7 +55,7 @@ export default {
 }
 
 h1 {
-  margin-left:10px;
+  margin-left:20px;
   font-size:2.4em;
 }
 
@@ -64,9 +64,9 @@ h1 img {
   z-index:10;
   position:absolute;
   left:15px;
-  width:32px;
-  height:32px;
-  margin-top:9px;
+  width: 40px;
+  height:40px;
+  margin-top:6px;
 }
 
 
