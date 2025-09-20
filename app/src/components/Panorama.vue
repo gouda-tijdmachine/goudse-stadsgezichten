@@ -64,6 +64,7 @@ export default {
         fitBounds: false,
         setMaxBounds: true,
       },
+      pendingBounds: null,
     };
   },
   mounted() {
@@ -97,9 +98,10 @@ export default {
     iiifUrl() {
       this.center = [-22, 98];
     },
-    gekozenGebouw() {
+    gekozenGebouw(newVal) {
       if (this.$route.name !== "HomePage") {
-        this.$refs.map.fitBounds(this.gekozenGebouw.bounds);
+        const bounds = newVal && newVal.bounds;
+        this.fitToBounds(bounds);
       }
     },
   },
@@ -108,9 +110,8 @@ export default {
       this.map = event.map;
       // On Drieluik zoom in to chosen building
       if (this.$route.name !== "HomePage") {
-        if (this.gekozenGebouw.bounds) {
-          this.$refs.map.fitBounds(this.gekozenGebouw.bounds);
-        }
+        const initialBounds = this.pendingBounds || (this.gekozenGebouw && this.gekozenGebouw.bounds);
+        this.fitToBounds(initialBounds);
       }
     },
     handleClick(name) {
@@ -140,6 +141,23 @@ export default {
           fillColor: "rgb(0,176,240)",
           fillOpacity: 0.05,
         });
+      }
+    },
+    fitToBounds(bounds) {
+      if (this.$route.name === "HomePage") {
+        return;
+      }
+      const hasBoundsArray = Array.isArray(bounds) && bounds.length >= 2;
+      if (!hasBoundsArray) {
+        this.pendingBounds = null;
+        return;
+      }
+      const mapInstance = this.map || (this.$refs.map && this.$refs.map.mapObject);
+      if (mapInstance && typeof mapInstance.fitBounds === "function") {
+        mapInstance.fitBounds(bounds);
+        this.pendingBounds = null;
+      } else {
+        this.pendingBounds = bounds;
       }
     },
   },
