@@ -96,12 +96,27 @@ export default {
     },
 
     getGekozenGebouwImages({ commit, state }) {
-      fetch(state.gekozenGebouw.properties.pid,{"headers": { "accept": "application/media+json" }, "method": "GET"})
-        .then(response => response.json())
-        .then(json => {
-          if (json) {
-              commit('fillImageList', json)
+      const properties = state.gekozenGebouw && state.gekozenGebouw.properties;
+      if (!properties || !properties.pid) {
+        commit('fillImageList', {});
+        return Promise.resolve();
+      }
+
+      return fetch(properties.pid, { headers: { accept: 'application/media+json' }, method: 'GET' })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`Request failed with status ${response.status}`);
           }
+          return response.json();
+        })
+        .then((json) => {
+          if (json) {
+            commit('fillImageList', json);
+          }
+          return json;
+        })
+        .catch(() => {
+          commit('fillImageList', {});
         });
     },
 
